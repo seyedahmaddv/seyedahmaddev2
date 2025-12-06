@@ -59,7 +59,7 @@ export const EmailContextProvider: React.FC<{ children: React.ReactNode }> = ({ 
     } else {
       setLoading(isEmailLoading);
     }
-  }, [emailData, emailError]);
+  }, [emailData, emailError, isEmailLoading, emails?.length]);
 
 
 

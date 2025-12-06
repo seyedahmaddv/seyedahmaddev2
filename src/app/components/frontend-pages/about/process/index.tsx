@@ -38,7 +38,7 @@ const Process = () => {
                                         <Image src="/images/svgs/icon-briefcase.svg" alt="icon1" width={40} height={40} />
                                     </Box>
                                     <Typography variant="h6" fontWeight={700}>Your Preferred Working Style</Typography>
-                                    <Typography variant="body1">Flexible approaches to match your team's workflow.</Typography>
+                                    <Typography variant="body1">Flexible approaches to match your team&apos;s workflow.</Typography>
                                 </Stack>
                             </Box>
                         </Box>
