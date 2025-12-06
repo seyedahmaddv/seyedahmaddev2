@@ -38,7 +38,7 @@ const Banner = () => {
                 },
               }}
             >
-              Let's Discuss Collaboration Opportunities
+              Let&apos;s Discuss Collaboration Opportunities
             </Typography>
             <Stack direction={{ xs: "column", sm: "row" }} spacing={2}>
               <Button
@@ -68,7 +68,7 @@ const Banner = () => {
             <Typography lineHeight={1.9}>
               Looking for a professional developer and technical writer for your next project?
               With expertise in modern web technologies and a commitment to clean, maintainable
-              code, I'm ready to bring your ideas to life. Connect with me on LinkedIn to
+              code, I&apos;m ready to bring your ideas to life. Connect with me on LinkedIn to
               discuss potential collaborations and project opportunities.
             </Typography>
           </Grid>

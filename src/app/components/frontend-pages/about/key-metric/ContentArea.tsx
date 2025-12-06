@@ -11,7 +11,7 @@ const ContentArea = () => {
                     xs: '34px', sm: '40px'
                 }
             }}>My Journey in Numbers</Typography>
-            <Typography lineHeight={1.9} >From the beginning of my professional path to the community I've built and the consistent growth I've achieved – these numbers reflect my dedication and progress at a glance. They represent the tangible results of my commitment to excellence in development and technical writing.</Typography>
+            <Typography lineHeight={1.9} >From the beginning of my professional path to the community I&apos;ve built and the consistent growth I&apos;ve achieved &ndash; these numbers reflect my dedication and progress at a glance. They represent the tangible results of my commitment to excellence in development and technical writing.</Typography>
         </>
     );
 };

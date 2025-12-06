@@ -54,7 +54,7 @@ const Process = () => {
                                 <Stack direction="column" spacing={2} textAlign="center">
 
                                     <Typography variant="h6" fontWeight={700} px={1} lineHeight={1.4}>Accelerated Development Start</Typography>
-                                    <Typography variant="body1"> Ready-made solutions for common requirements.</Typography>
+                                    <Typography variant="body1"> Ready&hyphen;made solutions for common requirements.</Typography>
 
                                 </Stack>
                             </Box>
