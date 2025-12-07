@@ -22,8 +22,8 @@ const HomePage = () => {
       <Banner />
       <Features />
       <DefendFocus />
-      <Leadership />
-      <PowerfulDozens />
+      {/* <Leadership /> */}
+      {/* <PowerfulDozens /> */}
       <Reviews />
       <ExceptionalFeature />
       <Pricing />
