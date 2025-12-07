@@ -47,7 +47,7 @@ const Contact = () => {
             Need a React/Next.js specialist for your next release? I&apos;m available remotely.
           </Typography>
           <Link
-            href="mailto:seyedahmaddv@gmail.com"
+            href="mailto:seyedahmaddev@gmail.com"
             underline="always"
             sx={{
               textDecorationColor: "white",
@@ -59,7 +59,7 @@ const Contact = () => {
               color="white"
               fontSize="16px"
             >
-              seyedahmaddv@gmail.com
+              seyedahmaddev@gmail.com
             </Typography>
           </Link>
         </Stack>

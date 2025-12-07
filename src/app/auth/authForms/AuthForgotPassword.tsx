@@ -12,25 +12,39 @@ export default function AuthForgotPassword(){
       <CustomFormLabel htmlFor="reset-email">Email Adddress</CustomFormLabel>
       <CustomTextField id="reset-email" variant="outlined" fullWidth />
 
-      <Button
-        color="primary"
-        variant="contained"
-        size="large"
-        fullWidth
+      <Link
         href="/"
-        component={Link}
+        style={{
+          display: "inline-block",
+          padding: "12px 16px",
+          backgroundColor: "rgb(33, 150, 243)",
+          color: "white",
+          textDecoration: "none",
+          borderRadius: "4px",
+          fontWeight: "500",
+          textAlign: "center",
+          fontSize: "15px",
+        }}
       >
         Forgot Password
-      </Button>
-      <Button
-        color="primary"
-        size="large"
-        fullWidth
+      </Link>
+      <Link
         href="/auth/auth1/login"
-        component={Link}
+        style={{
+          display: "inline-block",
+          padding: "12px 16px",
+          backgroundColor: "transparent",
+          color: "rgb(33, 150, 243)",
+          textDecoration: "none",
+          borderRadius: "4px",
+          fontWeight: "500",
+          textAlign: "center",
+          fontSize: "15px",
+          border: "1px solid rgb(33, 150, 243)",
+        }}
       >
         Back to Login
-      </Button>
+      </Link>
     </Stack>
   </>
 )};

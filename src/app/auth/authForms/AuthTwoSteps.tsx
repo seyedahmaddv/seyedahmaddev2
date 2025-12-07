@@ -21,16 +21,23 @@ const AuthTwoSteps = () => (
           <CustomTextField id="code" variant="outlined" fullWidth />
         </Stack>
       </Stack>
-      <Button
-        color="primary"
-        variant="contained"
-        size="large"
-        fullWidth
+      <Link
         href="/"
-        component={Link}
+        style={{
+          display: "inline-block",
+          width: "100%",
+          padding: "12px 16px",
+          backgroundColor: "rgb(33, 150, 243)",
+          color: "white",
+          textDecoration: "none",
+          borderRadius: "4px",
+          fontWeight: "500",
+          textAlign: "center",
+          fontSize: "15px",
+        }}
       >
         Verify My Account
-      </Button>
+      </Link>
 
       <Stack direction="row" spacing={1} mt={3}>
         <Typography color="textSecondary" variant="h6" fontWeight="400">

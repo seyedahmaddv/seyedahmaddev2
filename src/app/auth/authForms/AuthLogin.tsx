@@ -80,17 +80,23 @@ const AuthLogin = ({ title, subtitle, subtext }: loginType) => (
       </Stack>
     </Stack>
     <Box>
-      <Button
-        color="primary"
-        variant="contained"
-        size="large"
-        fullWidth
+      <Link
         href="/"
-        component={Link}
-        type="submit"
+        style={{
+          display: "inline-block",
+          width: "100%",
+          padding: "12px 16px",
+          backgroundColor: "rgb(33, 150, 243)",
+          color: "white",
+          textDecoration: "none",
+          borderRadius: "4px",
+          fontWeight: "500",
+          textAlign: "center",
+          fontSize: "15px",
+        }}
       >
         Sign In
-      </Button>
+      </Link>
     </Box>
     {subtitle}
   </>

@@ -243,9 +243,9 @@ const FAQ = () => {
               },
             }}
           >
-            <Typography>have a question?</Typography>
+            <Typography>Still have a question?</Typography>
             <Link
-              href="mailto:seyedahmaddv@gmail.com"
+              href="mailto:seyedahmaddev@gmail.com"
               color="inherit"
               underline="always"
               sx={{
@@ -254,7 +254,7 @@ const FAQ = () => {
                 },
               }}
             >
-              seyedahmaddv@gmail.com{" "}
+              Email seyedahmaddev@gmail.com{" "}
             </Link>
             <Typography>or</Typography>
             <Link
@@ -267,7 +267,7 @@ const FAQ = () => {
                 },
               }}
             >
-              on LinkedIn
+              connect on LinkedIn
             </Link>
             .
           </Box>

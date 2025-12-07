@@ -33,7 +33,7 @@ const Licenses = [
     },
     {
         id: 3,
-        type: 'Dedicated ',
+        type: 'Dedicated Front-End',
         isPopular: true,
         typeText: 'Full ownership of a product surface with weekly demos and CI/CD support.',
         price: '5200',
@@ -46,9 +46,9 @@ const Licenses = [
     },
     {
         id: 4,
-        type: 'Professional Advisory Package',
+        type: 'Advisory & Support',
         isPopular: false,
-        typeText: 'Comprehensive technical consulting including code reviews, architecture guidance, and knowledge transfer sessions.',
+        typeText: 'On-demand consulting, code reviews, and knowledge transfer sessions.',
         price: '900',
         fullSourceCode: true,
         isDoc: true,

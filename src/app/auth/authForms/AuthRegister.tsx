@@ -42,16 +42,23 @@ const AuthRegister = ({ title, subtitle, subtext }: registerType) => (
         <CustomFormLabel htmlFor="password">Password</CustomFormLabel>
         <CustomTextField id="password" variant="outlined" fullWidth />
       </Stack>
-      <Button
-        color="primary"
-        variant="contained"
-        size="large"
-        fullWidth
+      <Link
         href="/auth/auth1/login"
-        component={Link}
+        style={{
+          display: "inline-block",
+          width: "100%",
+          padding: "12px 16px",
+          backgroundColor: "rgb(33, 150, 243)",
+          color: "white",
+          textDecoration: "none",
+          borderRadius: "4px",
+          fontWeight: "500",
+          textAlign: "center",
+          fontSize: "15px",
+        }}
       >
         Sign Up
-      </Button>
+      </Link>
     </Box>
     {subtitle}
   </>

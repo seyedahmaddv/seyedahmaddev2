@@ -41,10 +41,10 @@ const C2a = () => {
                                     }
                                 }}>Let’s ship your next front-end release together</Typography>
                                 <Stack spacing={{ xs: 1, sm: 2 }} direction="row" flexWrap="wrap" mb={3}>
-                                    <Button variant="contained" size="large" href="mailto:seyedahmaddv@gmail.com">Book a call</Button>
+                                    <Button variant="contained" size="large" href="mailto:seyedahmaddev@gmail.com">Book a call</Button>
                                     <Button variant="outlined" size="large" href="https://linkedin.com/in/seyedahmaddv" target="_blank">Connect on LinkedIn</Button>
                                 </Stack>
-                                <Typography fontSize="14px"><Box fontWeight={600} component="span">Focus on modern web —</Box> React, Next.js, clean code & performance-first solutions.</Typography>
+                                <Typography fontSize="14px"><Box fontWeight={600} component="span">Remote-friendly process —</Box> English-first, async updates, transparent documentation.</Typography>
                             </Grid>
                         </Grid>
                     </Container>
