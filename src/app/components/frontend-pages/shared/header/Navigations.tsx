@@ -3,7 +3,6 @@ import React from "react";
 import Button from "@mui/material/Button";
 
 import { styled } from "@mui/material/styles";
-import { Chip } from "@mui/material";
 import NextLink from "next/link";
 
 import { usePathname } from "next/navigation";
@@ -75,19 +74,7 @@ const Navigations = () => {
           key={i}
         >
           <NextLink href={navlink.href}>
-            {navlink.title}{" "}
-            {navlink.new ? (
-              <Chip
-                label="New"
-                size="small"
-                sx={{
-                  ml: "6px",
-                  borderRadius: "8px",
-                  color: "primary.main",
-                  backgroundColor: "rgba(93, 135, 255, 0.15)",
-                }}
-              />
-            ) : null}
+            {navlink.title}
           </NextLink>
         </StyledButton>
       ))}
