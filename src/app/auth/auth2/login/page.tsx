@@ -63,8 +63,8 @@ export default function Login2() {
                       New to Modernize?
                     </Typography>
                     <Typography
-                      component={Link}
                       href="/auth/auth2/register"
+                      component={Link}
                       fontWeight="500"
                       sx={{
                         textDecoration: "none",

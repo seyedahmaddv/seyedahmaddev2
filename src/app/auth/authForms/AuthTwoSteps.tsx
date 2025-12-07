@@ -26,8 +26,8 @@ const AuthTwoSteps = () => (
         variant="contained"
         size="large"
         fullWidth
-        component={Link}
         href="/"
+        component={Link}
       >
         Verify My Account
       </Button>
@@ -37,8 +37,8 @@ const AuthTwoSteps = () => (
           Didn&apos;t get the code?
         </Typography>
         <Typography
-          component={Link}
           href="/"
+          component={Link}
           fontWeight="500"
           sx={{
             textDecoration: "none",

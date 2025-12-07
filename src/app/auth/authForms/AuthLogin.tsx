@@ -68,8 +68,8 @@ const AuthLogin = ({ title, subtitle, subtext }: loginType) => (
           />
         </FormGroup>
         <Typography
-          component={Link}
           href="/auth/auth1/forgot-password"
+          component={Link}
           fontWeight="500"
           sx={{
             textDecoration: "none",
@@ -86,8 +86,8 @@ const AuthLogin = ({ title, subtitle, subtext }: loginType) => (
         variant="contained"
         size="large"
         fullWidth
-        component={Link}
         href="/"
+        component={Link}
         type="submit"
       >
         Sign In

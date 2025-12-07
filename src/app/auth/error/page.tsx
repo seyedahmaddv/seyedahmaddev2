@@ -27,8 +27,8 @@ const Error = () => (
       <Button
         color="primary"
         variant="contained"
-        component={Link}
         href="/"
+        component={Link}
         disableElevation
       >
         Go Back to Home

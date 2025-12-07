@@ -91,8 +91,8 @@ export default function Login() {
                     New to Modernize?
                   </Typography>
                   <Typography
-                    component={Link}
                     href="/auth/auth1/register"
+                    component={Link}
                     fontWeight="500"
                     sx={{
                       textDecoration: "none",

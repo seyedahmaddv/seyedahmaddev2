@@ -47,8 +47,8 @@ const AuthRegister = ({ title, subtitle, subtext }: registerType) => (
         variant="contained"
         size="large"
         fullWidth
-        component={Link}
         href="/auth/auth1/login"
+        component={Link}
       >
         Sign Up
       </Button>

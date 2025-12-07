@@ -17,8 +17,8 @@ export default function AuthForgotPassword(){
         variant="contained"
         size="large"
         fullWidth
-        component={Link}
         href="/"
+        component={Link}
       >
         Forgot Password
       </Button>
@@ -26,8 +26,8 @@ export default function AuthForgotPassword(){
         color="primary"
         size="large"
         fullWidth
-        component={Link}
         href="/auth/auth1/login"
+        component={Link}
       >
         Back to Login
       </Button>

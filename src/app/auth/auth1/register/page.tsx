@@ -85,8 +85,8 @@ export default function Register() {
                     Already have an Account?
                   </Typography>
                   <Typography
-                    component={Link}
                     href="/auth/auth1/login"
+                    component={Link}
                     fontWeight="500"
                     sx={{
                       textDecoration: "none",
