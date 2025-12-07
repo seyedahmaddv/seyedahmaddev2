@@ -8,8 +8,6 @@ import { Theme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { styled } from '@mui/material/styles';
 import BannerContent from "./BannerContent";
-import bannerbgImg1 from "../../../../public/images/landingpage/bannerimg1.svg";
-import bannerbgImg2 from "../../../../public/images/landingpage/bannerimg2.svg";
 import Image from "next/image";
 
 const Banner = () => {
@@ -71,18 +69,18 @@ const Banner = () => {
                 <Stack direction={"row"}>
                   <Box>
                     <SliderBox>
-                      <Image src={bannerbgImg1} alt="banner" priority />
+                      <Image src="/images/landingpage/bannerimg1.svg" alt="banner" priority />
                     </SliderBox>
                     <SliderBox>
-                      <Image src={bannerbgImg1} alt="banner" priority />
+                      <Image src="/images/landingpage/bannerimg1.svg" alt="banner" priority />
                     </SliderBox>
                   </Box>
                   <Box>
                     <SliderBox2>
-                      <Image src={bannerbgImg2} alt="banner" priority />
+                      <Image src="/images/landingpage/bannerimg2.svg" alt="banner" priority />
                     </SliderBox2>
                     <SliderBox2>
-                      <Image src={bannerbgImg2} alt="banner" priority />
+                      <Image src="/images/landingpage/bannerimg2.svg" alt="banner" priority />
                     </SliderBox2>
                   </Box>
                 </Stack>

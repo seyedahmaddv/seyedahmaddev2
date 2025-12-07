@@ -6,32 +6,6 @@ import Container from "@mui/material/Container";
 import { Grid } from '@mui/material'
 import Typography from "@mui/material/Typography";
 import { styled } from "@mui/material/styles";
-// images
-import mainDemo from "../../../../public/images/landingpage/demos/demo-main.jpg";
-import darkDemo from "../../../../public/images/landingpage/demos/demo-dark.jpg";
-import horizontalDemo from "../../../../public/images/landingpage/demos/demo-horizontal.jpg";
-import rtlDemo from "../../../../public/images/landingpage/demos/demo-rtl.jpg";
-import minidemo from '../../../../public/images/landingpage/demos/demo-minisidebar.jpg'
-import authdemo from '../../../../public/images/landingpage/demos/demo-nextauth.jpg'
-import app1 from "../../../../public/images/landingpage/apps/app-calendar.jpg";
-import app2 from "../../../../public/images/landingpage/apps/app-chat.jpg";
-import app3 from "../../../../public/images/landingpage/apps/app-contact.jpg";
-import app4 from "../../../../public/images/landingpage/apps/app-email.jpg";
-import app5 from "../../../../public/images/landingpage/apps/app-note.jpg";
-import app6 from "../../../../public/images/landingpage/apps/app-user-profile.jpg";
-import app7 from "../../../../public/images/landingpage/apps/app-blog.jpg";
-import app8 from "../../../../public/images/landingpage/apps/app-ticket.jpg";
-import app9 from "../../../../public/images/landingpage/apps/app-ecommerce-shop.jpg";
-import app11 from "../../../../public/images/landingpage/apps/app-ecommerce-checkout.jpg";
-import app12 from "../../../../public/images/landingpage/apps/app-ecommerce-list.jpg";
-import App13 from "../../../../public/images/landingpage/apps/app-kanban.jpg";
-import App14 from "../../../../public/images/landingpage/apps/app-invoice.jpg";
-
-import Page1 from "../../../../public/images/landingpage/f-pages/page-homepage.jpg";
-import Page2 from "../../../../public/images/landingpage/f-pages/page-about.jpg";
-import Page3 from "../../../../public/images/landingpage/f-pages/page-portfolio.jpg";
-import Page4 from "../../../../public/images/landingpage/f-pages/page-pricing.jpg";
-
 import DemoTitle from "./DemoTitle";
 import Image from "next/image";
 
@@ -44,7 +18,7 @@ interface sliderData {
 
 interface DemoTypes {
   link: string;
-  img: string | any;
+  img: string;
   title: string;
   hot?: boolean;
 }
@@ -52,32 +26,32 @@ interface DemoTypes {
 const demos: DemoTypes[] = [
   {
     link: "https://modernize-nextjs.adminmart.com/dashboards/modern",
-    img: mainDemo,
+    img: "/images/landingpage/demos/demo-main.jpg",
     title: "Main",
   },
   {
     link: "https://modernize-nextjs-dark.vercel.app/dashboards/ecommerce",
-    img: darkDemo,
+    img: "/images/landingpage/demos/demo-dark.jpg",
     title: "Dark",
   },
   {
     link: "https://modernize-nextjs-horizontal.vercel.app/dashboards/modern",
-    img: horizontalDemo,
+    img: "/images/landingpage/demos/demo-horizontal.jpg",
     title: "Horizontal",
   },
   {
     link: "https://modernize-nextjs-rtl.vercel.app/",
-    img: rtlDemo,
+    img: "/images/landingpage/demos/demo-rtl.jpg",
     title: "RTL",
   },
   {
     link: "https://modernize-nextjs-minisidebar.vercel.app/",
-    img: minidemo,
+    img: "/images/landingpage/demos/demo-minisidebar.jpg",
     title: "Minisidebar",
   },
   {
     link: "https://modernize-nextjs-nextauth.vercel.app/",
-    img: authdemo,
+    img: "/images/landingpage/demos/demo-nextauth.jpg",
     title: "Nextauth",
   },
 ];
@@ -85,22 +59,22 @@ const demos: DemoTypes[] = [
 const pages: DemoTypes[] = [
   {
     link: "https://modernize-nextjs.adminmart.com/frontend-pages/homepage",
-    img: Page1,
+    img: "/images/landingpage/f-pages/page-homepage.jpg",
     title: "Homepage",
   },
   {
     link: "https://modernize-nextjs.adminmart.com/frontend-pages/about",
-    img: Page2,
+    img: "/images/landingpage/f-pages/page-about.jpg",
     title: "About us",
   },
   {
     link: "https://modernize-nextjs.adminmart.com/frontend-pages/portfolio",
-    img: Page3,
+    img: "/images/landingpage/f-pages/page-portfolio.jpg",
     title: "Portfolio",
   },
   {
     link: "https://modernize-nextjs.adminmart.com/frontend-pages/pricing",
-    img: Page4,
+    img: "/images/landingpage/f-pages/page-pricing.jpg",
     title: "Pricing",
   },
 ];
@@ -108,69 +82,69 @@ const pages: DemoTypes[] = [
 const apps: DemoTypes[] = [
   {
     link: "https://modernize-nextjs.adminmart.com/apps/kanban",
-    img: App13,
+    img: "/images/landingpage/apps/app-kanban.jpg",
     hot: true,
     title: "Kanban App",
   },
   {
     link: "https://modernize-nextjs.adminmart.com/apps/invoice/list",
-    img: App14,
+    img: "/images/landingpage/apps/app-invoice.jpg",
     hot: true,
     title: "Invoice App",
   },
   {
     link: "https://modernize-nextjs.adminmart.com/apps/calendar",
-    img: app1,
+    img: "/images/landingpage/apps/app-calendar.jpg",
     title: "Calendar App",
   },
   {
     link: "https://modernize-nextjs.adminmart.com/apps/chats",
-    img: app2,
+    img: "/images/landingpage/apps/app-chat.jpg",
     title: "Chat App",
   },
   {
     link: "https://modernize-nextjs.adminmart.com/apps/contacts",
-    img: app3,
+    img: "/images/landingpage/apps/app-contact.jpg",
     title: "Contact App",
   },
   {
     link: "https://modernize-nextjs.adminmart.com/apps/email",
-    img: app4,
+    img: "/images/landingpage/apps/app-email.jpg",
     title: "Email App",
   },
   {
     link: "https://modernize-nextjs.adminmart.com/apps/notes",
-    img: app5,
+    img: "/images/landingpage/apps/app-note.jpg",
     title: "Note App",
   },
   {
     link: "https://modernize-nextjs.adminmart.com/apps/user-profile/profile",
-    img: app6,
+    img: "/images/landingpage/apps/app-user-profile.jpg",
     title: "User Profile App",
   },
   {
     link: "https://modernize-nextjs.adminmart.com/apps/blog/post",
-    img: app7,
+    img: "/images/landingpage/apps/app-blog.jpg",
     title: "Blog App",
   },
   {
     link: "https://modernize-nextjs.adminmart.com/apps/tickets",
-    img: app8,
+    img: "/images/landingpage/apps/app-ticket.jpg",
     title: "Ticket App",
   },
   {
     link: "https://modernize-nextjs.adminmart.com/apps/ecommerce/shop",
-    img: app9,
+    img: "/images/landingpage/apps/app-ecommerce-shop.jpg",
     title: "eCommerce Shop App",
   },
   {
     link: "https://modernize-nextjs.adminmart.com/apps/ecommerce/checkout",
-    img: app11,
+    img: "/images/landingpage/apps/app-ecommerce-checkout.jpg",
     title: "eCommerce Checkout App",
   },
   {
     link: "https://modernize-nextjs.adminmart.com/apps/ecommerce/list",
-    img: app12,
+    img: "/images/landingpage/apps/app-ecommerce-list.jpg",
     title: "eCommerce List App",
   },
 ];

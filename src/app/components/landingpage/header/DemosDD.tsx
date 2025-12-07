@@ -7,57 +7,43 @@ import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import { styled } from '@mui/material/styles';
 import NextLink from "next/link";
-
-import mainDemo from "../../../../public/images/landingpage/demos/demo-main.jpg";
-import darkDemo from "../../../../public/images/landingpage/demos/demo-dark.jpg";
-import horizontalDemo from "../../../../public/images/landingpage/demos/demo-horizontal.jpg";
-import rtlDemo from "../../../../public/images/landingpage/demos/demo-rtl.jpg";
-import minidemo from '../../../../public/images/landingpage/demos/demo-minisidebar.jpg'
-import authdemo from '../../../../public/images/landingpage/demos/demo-nextauth.jpg'
-
-
-import app1 from "../../../../public/images/landingpage/apps/app-calendar.jpg";
-import app2 from "../../../../public/images/landingpage/apps/app-chat.jpg";
-import app3 from "../../../../public/images/landingpage/apps/app-contact.jpg";
-import app4 from "../../../../public/images/landingpage/apps/app-email.jpg";
-import app5 from "../../../../public/images/landingpage/apps/app-note.jpg";
 import Image from "next/image";
 
 interface DemoTypes {
   link: string;
-  img: string | any;
+  img: string;
   title: string;
 }
 
 const demos: DemoTypes[] = [
   {
     link: "https://modernize-nextjs.adminmart.com/landingpage",
-    img: mainDemo,
+    img: "/images/landingpage/demos/demo-main.jpg",
     title: "Main",
   },
   {
     link: "https://modernize-nextjs-dark.vercel.app/",
-    img: darkDemo,
+    img: "/images/landingpage/demos/demo-dark.jpg",
     title: "Dark",
   },
   {
     link: "https://modernize-nextjs-horizontal.vercel.app/",
-    img: horizontalDemo,
+    img: "/images/landingpage/demos/demo-horizontal.jpg",
     title: "Horizontal",
   },
   {
     link: "https://modernize-nextjs-rtl.vercel.app/",
-    img: rtlDemo,
+    img: "/images/landingpage/demos/demo-rtl.jpg",
     title: "RTL",
   },
   {
     link: "https://modernize-nextjs-minisidebar.vercel.app/",
-    img: minidemo,
+    img: "/images/landingpage/demos/demo-minisidebar.jpg",
     title: "Minisidebar",
   },
   {
     link: "https://modernize-nextjs-nextauth.vercel.app/",
-    img: authdemo,
+    img: "/images/landingpage/demos/demo-nextauth.jpg",
     title: "Nextauth",
   },
 
@@ -66,27 +52,27 @@ const demos: DemoTypes[] = [
 const apps: DemoTypes[] = [
   {
     link: "https://modernize-nextjs.adminmart.com/apps/calendar",
-    img: app1,
+    img: "/images/landingpage/apps/app-calendar.jpg",
     title: "Calendar",
   },
   {
     link: "https://modernize-nextjs.adminmart.com/apps/chats",
-    img: app2,
+    img: "/images/landingpage/apps/app-chat.jpg",
     title: "Chat",
   },
   {
     link: "https://modernize-nextjs.adminmart.com/apps/contacts",
-    img: app3,
+    img: "/images/landingpage/apps/app-contact.jpg",
     title: "Contact",
   },
   {
     link: "https://modernize-nextjs.adminmart.com/apps/email",
-    img: app4,
+    img: "/images/landingpage/apps/app-email.jpg",
     title: "Email",
   },
   {
     link: "https://modernize-nextjs.adminmart.com/apps/notes",
-    img: app5,
+    img: "/images/landingpage/apps/app-note.jpg",
     title: "Note",
   },
 ];
