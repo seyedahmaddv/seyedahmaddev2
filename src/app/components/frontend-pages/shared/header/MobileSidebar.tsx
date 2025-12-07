@@ -24,19 +24,7 @@ const MobileSidebar = () => {
                 justifyContent: "start",
               }}
             >
-              {navlink.title}{" "}
-              {navlink.new ? (
-                <Chip
-                  label="New"
-                  size="small"
-                  sx={{
-                    ml: "6px",
-                    borderRadius: "8px",
-                    color: "primary.main",
-                    backgroundColor: "rgba(93, 135, 255, 0.15)",
-                  }}
-                />
-              ) : null}
+              {navlink.title}
             </Button>
           ))}
 
