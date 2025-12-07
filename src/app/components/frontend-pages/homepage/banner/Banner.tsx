@@ -168,7 +168,7 @@ const Banner = () => {
                 color="primary"
                 size="large"
                 variant="contained"
-                href="/auth/auth1/login"
+                href="https://linkedin.com/in/seyedahmaddv"
               >
                 Work With Me
               </Button>
@@ -229,7 +229,7 @@ const Banner = () => {
                 </Tooltip>
               ))}
 
-              <Dialog
+              {/* <Dialog
                 maxWidth="lg"
                 open={open}
                 onClose={handleClose}
@@ -253,7 +253,7 @@ const Banner = () => {
                     Close
                   </Button>
                 </DialogActions>
-              </Dialog>
+              </Dialog> */}
             </Stack>
           </Grid>
           {lgUp ? (
