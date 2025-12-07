@@ -7,30 +7,30 @@ import { Grid } from '@mui/material'
 import Typography from "@mui/material/Typography";
 import { styled } from "@mui/material/styles";
 // images
-import mainDemo from "/images/landingpage/demos/demo-main.jpg";
-import darkDemo from "/images/landingpage/demos/demo-dark.jpg";
-import horizontalDemo from "/images/landingpage/demos/demo-horizontal.jpg";
-import rtlDemo from "/images/landingpage/demos/demo-rtl.jpg";
-import minidemo from '/images/landingpage/demos/demo-minisidebar.jpg'
-import authdemo from '/images/landingpage/demos/demo-nextauth.jpg'
-import app1 from "/images/landingpage/apps/app-calendar.jpg";
-import app2 from "/images/landingpage/apps/app-chat.jpg";
-import app3 from "/images/landingpage/apps/app-contact.jpg";
-import app4 from "/images/landingpage/apps/app-email.jpg";
-import app5 from "/images/landingpage/apps/app-note.jpg";
-import app6 from "/images/landingpage/apps/app-user-profile.jpg";
-import app7 from "/images/landingpage/apps/app-blog.jpg";
-import app8 from "/images/landingpage/apps/app-ticket.jpg";
-import app9 from "/images/landingpage/apps/app-ecommerce-shop.jpg";
-import app11 from "/images/landingpage/apps/app-ecommerce-checkout.jpg";
-import app12 from "/images/landingpage/apps/app-ecommerce-list.jpg";
-import App13 from "/images/landingpage/apps/app-kanban.jpg";
-import App14 from "/images/landingpage/apps/app-invoice.jpg";
+import mainDemo from "../../../../public/images/landingpage/demos/demo-main.jpg";
+import darkDemo from "../../../../public/images/landingpage/demos/demo-dark.jpg";
+import horizontalDemo from "../../../../public/images/landingpage/demos/demo-horizontal.jpg";
+import rtlDemo from "../../../../public/images/landingpage/demos/demo-rtl.jpg";
+import minidemo from '../../../../public/images/landingpage/demos/demo-minisidebar.jpg'
+import authdemo from '../../../../public/images/landingpage/demos/demo-nextauth.jpg'
+import app1 from "../../../../public/images/landingpage/apps/app-calendar.jpg";
+import app2 from "../../../../public/images/landingpage/apps/app-chat.jpg";
+import app3 from "../../../../public/images/landingpage/apps/app-contact.jpg";
+import app4 from "../../../../public/images/landingpage/apps/app-email.jpg";
+import app5 from "../../../../public/images/landingpage/apps/app-note.jpg";
+import app6 from "../../../../public/images/landingpage/apps/app-user-profile.jpg";
+import app7 from "../../../../public/images/landingpage/apps/app-blog.jpg";
+import app8 from "../../../../public/images/landingpage/apps/app-ticket.jpg";
+import app9 from "../../../../public/images/landingpage/apps/app-ecommerce-shop.jpg";
+import app11 from "../../../../public/images/landingpage/apps/app-ecommerce-checkout.jpg";
+import app12 from "../../../../public/images/landingpage/apps/app-ecommerce-list.jpg";
+import App13 from "../../../../public/images/landingpage/apps/app-kanban.jpg";
+import App14 from "../../../../public/images/landingpage/apps/app-invoice.jpg";
 
-import Page1 from "/images/landingpage/f-pages/page-homepage.jpg";
-import Page2 from "/images/landingpage/f-pages/page-about.jpg";
-import Page3 from "/images/landingpage/f-pages/page-portfolio.jpg";
-import Page4 from "/images/landingpage/f-pages/page-pricing.jpg";
+import Page1 from "../../../../public/images/landingpage/f-pages/page-homepage.jpg";
+import Page2 from "../../../../public/images/landingpage/f-pages/page-about.jpg";
+import Page3 from "../../../../public/images/landingpage/f-pages/page-portfolio.jpg";
+import Page4 from "../../../../public/images/landingpage/f-pages/page-pricing.jpg";
 
 import DemoTitle from "./DemoTitle";
 import Image from "next/image";
