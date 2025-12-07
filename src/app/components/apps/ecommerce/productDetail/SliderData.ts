@@ -3,13 +3,13 @@ interface DataType {
   imgPath: any;
 }
 
-import img1 from "/public/images/products/s1.jpg";
-import img2 from "/public/images/products/s2.jpg";
-import img3 from "/public/images/products/s3.jpg";
-import img4 from "/public/images/products/s4.jpg";
-import img5 from "/public/images/products/s5.jpg";
-import img6 from "/public/images/products/s6.jpg";
-import img7 from "/public/images/products/s7.jpg";
+import img1 from "../../../../../../public/images/products/s1.jpg";
+import img2 from "../../../../../../public/images/products/s2.jpg";
+import img3 from "../../../../../../public/images/products/s3.jpg";
+import img4 from "../../../../../../public/images/products/s4.jpg";
+import img5 from "../../../../../../public/images/products/s5.jpg";
+import img6 from "../../../../../../public/images/products/s6.jpg";
+import img7 from "../../../../../../public/images/products/s7.jpg";
 
 const SliderData: DataType[] = [
   {

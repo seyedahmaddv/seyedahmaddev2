@@ -8,7 +8,7 @@ import DialogTitle from '@mui/material/DialogTitle';
 import FormLabel from '@mui/material/FormLabel';
 import Grid from '@mui/material/Grid';
 import TextField from '@mui/material/TextField';
-import user1 from '/images/profile/user-2.jpg';
+import user1 from '../../../../public/images/profile/user-2.jpg';
 
 import { ContactContext } from '@/app/context/Conatactcontext';
 import { MenuItem, Select } from '@mui/material';

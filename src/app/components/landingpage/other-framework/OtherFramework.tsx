@@ -5,11 +5,11 @@ import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import OtherFrameworkTitle from './OtherFrameworkTitle';
 import Image from 'next/image';
-import AngularIcon from "/images/landingpage/f-angular.png";
-import VueIcon from "/images/landingpage/f-vue.png";
-import BootstrapIcon from "/images/landingpage/f-bootstrap.png";
-import NetIcon from "/images/landingpage/f-net.png";
-import NuxtIcon from "/images/landingpage/f-nuxt.png";
+import AngularIcon from "../../../../public/images/landingpage/f-angular.png";
+import VueIcon from "../../../../public/images/landingpage/f-vue.png";
+import BootstrapIcon from "../../../../public/images/landingpage/f-bootstrap.png";
+import NetIcon from "../../../../public/images/landingpage/f-net.png";
+import NuxtIcon from "../../../../public/images/landingpage/f-nuxt.png";
 import Link from 'next/link';
 
 const frameworks = [

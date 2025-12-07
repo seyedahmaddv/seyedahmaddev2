@@ -7,7 +7,7 @@ import { styled } from '@mui/material/styles';
 import FrameworksTitle from "./FrameworksTitle";
 
 // images
-import sliderImg from "/images/landingpage/background/slider-group.png";
+import sliderImg from "../../../../public/images/landingpage/background/slider-group.png";
 import Image from "next/image";
 
 const SliderBox = styled(Box)(() => ({

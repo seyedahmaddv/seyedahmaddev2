@@ -20,7 +20,7 @@ import { ProductContext } from "@/app/context/Ecommercecontext/index";
 import ProductSearch from "./ProductSearch";
 import { IconBasket, IconMenu2 } from "@tabler/icons-react";
 import AlertCart from "../productCart/AlertCart";
-import emptyCart from "/images/products/empty-shopping-cart.svg";
+import emptyCart from "../../../../../../public/images/products/empty-shopping-cart.svg";
 import BlankCard from "../../../shared/BlankCard";
 import { ProductType } from "../../../../(DashboardLayout)/types/apps/eCommerce";
 import Image from "next/image";
