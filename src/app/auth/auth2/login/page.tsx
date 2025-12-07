@@ -62,17 +62,16 @@ export default function Login2() {
                     >
                       New to Modernize?
                     </Typography>
-                    <Typography
+                    <Link
                       href="/auth/auth2/register"
-                      component={Link}
-                      fontWeight="500"
-                      sx={{
+                      style={{
                         textDecoration: "none",
-                        color: "primary.main",
+                        color: "rgb(33, 150, 243)",
+                        fontWeight: "500",
                       }}
                     >
                       Create an account
-                    </Typography>
+                    </Link>
                   </Stack>
                 }
               />

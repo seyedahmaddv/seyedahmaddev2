@@ -65,17 +65,16 @@ export default function Register2() {
                     >
                       Already have an Account?
                     </Typography>
-                    <Typography
+                    <Link
                       href="/auth/auth2/login"
-                      component={Link}
-                      fontWeight="500"
-                      sx={{
+                      style={{
                         textDecoration: "none",
-                        color: "primary.main",
+                        color: "rgb(33, 150, 243)",
+                        fontWeight: "500",
                       }}
                     >
                       Sign In
-                    </Typography>
+                    </Link>
                   </Stack>
                 }
               />

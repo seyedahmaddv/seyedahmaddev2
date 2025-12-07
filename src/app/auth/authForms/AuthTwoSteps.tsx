@@ -36,17 +36,16 @@ const AuthTwoSteps = () => (
         <Typography color="textSecondary" variant="h6" fontWeight="400">
           Didn&apos;t get the code?
         </Typography>
-        <Typography
+        <Link
           href="/"
-          component={Link}
-          fontWeight="500"
-          sx={{
+          style={{
             textDecoration: "none",
-            color: "primary.main",
+            color: "rgb(33, 150, 243)",
+            fontWeight: "500",
           }}
         >
           Resend
-        </Typography>
+        </Link>
       </Stack>
     </Box>
   </>
