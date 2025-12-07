@@ -1,8 +1,8 @@
 import React from "react";
 import { Box, Grid, Paper, Radio, Stack, Typography } from "@mui/material";
-import Paypal from "/public/images/svgs/paypal.svg";
-import payment from "/public/images/products/payment.svg";
-import mastercard from "/public/images/svgs/mastercard.svg";
+import Paypal from "/images/svgs/paypal.svg";
+import payment from "/images/products/payment.svg";
+import mastercard from "/images/svgs/mastercard.svg";
 import Image from "next/image";
 
 interface deliveryType {

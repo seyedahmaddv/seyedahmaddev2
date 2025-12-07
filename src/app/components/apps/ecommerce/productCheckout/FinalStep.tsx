@@ -1,7 +1,7 @@
 "use client"
 import { Box, Typography } from '@mui/material';
 import Image from 'next/image';
-import payment from '/public/images/products/payment-complete.gif';
+import payment from '/images/products/payment-complete.gif';
 
 const FinalStep = () => {
   return (
