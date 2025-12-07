@@ -1,4 +1,4 @@
-import { Box, Container, Typography, Button } from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -24,15 +24,20 @@ const Maintenance = () => (
       <Typography align="center" variant="h4" mb={4}>
         Website is Under Construction. Check back later!
       </Typography>
-      <Button
-        color="primary"
-        variant="contained"
+      <Link
         href="/"
-        component={Link}
-        disableElevation
+        style={{
+          display: "inline-block",
+          padding: "10px 24px",
+          backgroundColor: "rgb(33, 150, 243)",
+          color: "white",
+          textDecoration: "none",
+          borderRadius: "4px",
+          fontWeight: "500",
+        }}
       >
         Go Back to Home
-      </Button>
+      </Link>
     </Container>
   </Box>
 );
