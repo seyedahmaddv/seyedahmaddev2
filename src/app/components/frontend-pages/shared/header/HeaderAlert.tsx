@@ -51,7 +51,7 @@ const HeaderAlert = () => {
   const lgUp = useMediaQuery((theme) => theme.breakpoints.up("lg"));
 
   // WhatsApp link - Update this with your actual WhatsApp number
-  const whatsappLink = "https://wa.me/989123456789?text=سلام%20من%20درباره%20داشبورد%20مدرن%20سوال%20دارم";
+  const whatsappLink = "https://wa.me/989123456789?text=I have Quastion about website developing with next and react";
 
   return (
     <>

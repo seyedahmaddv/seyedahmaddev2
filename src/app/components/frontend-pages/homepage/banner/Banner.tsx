@@ -172,7 +172,7 @@ const Banner = () => {
               >
                 Work With Me
               </Button>
-              <Button
+              {/* <Button
                 variant="text"
                 color="inherit"
                 onClick={handleClickOpen}
@@ -196,7 +196,7 @@ const Banner = () => {
                   height={40}
                 />{" "}
                 View live projects
-              </Button>
+              </Button> */}
             </Stack>
             <Stack
               direction="row"
