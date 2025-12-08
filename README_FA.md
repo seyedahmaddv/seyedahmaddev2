@@ -1,6 +1,6 @@
 # 📊 Seyedahmaddev Next.js Admin Dashboard
 
-یک داشبورد ادمینیستریشن حرفه‌ای و مدرن با **Next.js 16** و **Material-UI**
+یک وب سایت نکست جی اس حرفه‌ای و مدرن با **Next.js 16** و **Material-UI**
 
 ---
 

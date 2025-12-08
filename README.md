@@ -1,4 +1,4 @@
-# 🎨 Modernize Next.js Admin Dashboard
+# 🎨 Next.js website with Dashboard
 
 > A modern, feature-rich admin dashboard built with **Next.js 16**, **Turbopack**, and **Material-UI**.
 
@@ -27,7 +27,7 @@
 
 ## 🎯 Overview
 
-**Modernize** is a comprehensive admin dashboard template built with the latest technologies. It provides a solid foundation for building enterprise-level applications with a beautiful, responsive UI and extensive component library.
+**SeyedAhmadDev** is a comprehensive admin dashboard template built with the latest technologies. It provides a solid foundation for building enterprise-level applications with a beautiful, responsive UI and extensive component library.
 
 ### Key Highlights
 - ⚡ **Turbopack** - Ultra-fast build times with Next.js 16
