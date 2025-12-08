@@ -19,6 +19,7 @@ const NotificationBg = styled(Box)(() => ({
   right: "20%",
   top: 0,
   pointerEvents: "none",
+  zIndex: -1,
 }));
 
 const NotificationBg2 = styled(Box)(() => ({
@@ -26,6 +27,7 @@ const NotificationBg2 = styled(Box)(() => ({
   right: 0,
   top: 0,
   pointerEvents: "none",
+  zIndex: -1,
 }));
 
 const NotificationBg3 = styled(Box)(() => ({
@@ -33,6 +35,7 @@ const NotificationBg3 = styled(Box)(() => ({
   left: 0,
   bottom: "-5px",
   pointerEvents: "none",
+  zIndex: -1,
 }));
 
 const HeaderAlert = () => {
