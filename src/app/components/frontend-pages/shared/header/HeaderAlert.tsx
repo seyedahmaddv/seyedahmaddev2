@@ -12,7 +12,7 @@ import {
 import { styled } from "@mui/material/styles";
 import Image from "next/image";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import { IconX } from "@tabler/icons-react";
+import { IconX, IconBrandWhatsapp } from "@tabler/icons-react";
 
 const NotificationBg = styled(Box)(() => ({
   position: "absolute",
@@ -38,11 +38,14 @@ const HeaderAlert = () => {
 
   // Function to toggle the visibility
   const handleAlert = () => {
-    setIsAlertVisible(false); // Hides the div when the button is clicked
+    setIsAlertVisible(false);
   };
 
-  //   sidebar
+  // Sidebar
   const lgUp = useMediaQuery((theme) => theme.breakpoints.up("lg"));
+
+  // WhatsApp link - Update this with your actual WhatsApp number
+  const whatsappLink = "https://wa.me/989123456789?text=سلام%20من%20درباره%20داشبورد%20مدرن%20سوال%20دارم";
 
   return (
     <>
@@ -62,12 +65,14 @@ const HeaderAlert = () => {
           >
             {lgUp ? (
               <Chip
-                label="Available"
+                label="Security Advisory"
                 size="small"
+                icon={<Box sx={{ color: "#FF6B6B !important" }}>⚠️</Box>}
                 sx={{
-                  backgroundColor: "rgba(255,255,255,0.15)",
+                  backgroundColor: "rgba(255, 107, 107, 0.2)",
                   color: "white",
                   borderRadius: "8px",
+                  fontWeight: 600,
                 }}
               />
             ) : null}
@@ -81,9 +86,60 @@ const HeaderAlert = () => {
               }}
               fontSize="13px"
             >
-              Remote React.js & Next.js collaboration with Seyed Ahmad Gholami
+              🔒 Next.js Security Update Required: CVE-2025-66478 - Please upgrade to latest version
             </Typography>
+
+            <Link
+              href="https://www.linkedin.com/posts/seyedahmaddv_security-advisory-cve-2025-66478-activity-7403666520083451904-yDzY?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB5obwQB2ou-vHQ0XDq1YpcEii5-V2YGrMM"
+              target="_blank"
+              rel="noopener noreferrer"
+              sx={{ textDecoration: "none" }}
+            >
+              <Button
+                variant="contained"
+                color="secondary"
+                size="small"
+                sx={{
+                  textTransform: "none",
+                  fontWeight: 600,
+                  fontSize: "12px",
+                  px: "12px",
+                  py: "6px",
+                }}
+              >
+                Learn More
+              </Button>
+            </Link>
+
+            <Link
+              href={whatsappLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              sx={{ textDecoration: "none" }}
+            >
+              <Button
+                variant="outlined"
+                startIcon={<IconBrandWhatsapp size={16} />}
+                size="small"
+                sx={{
+                  color: "white",
+                  borderColor: "rgba(255,255,255,0.3)",
+                  "&:hover": {
+                    borderColor: "white",
+                    backgroundColor: "rgba(255,255,255,0.1)",
+                  },
+                  textTransform: "none",
+                  fontWeight: 600,
+                  fontSize: "12px",
+                  px: "12px",
+                  py: "6px",
+                }}
+              >
+                Contact via WhatsApp
+              </Button>
+            </Link>
           </Stack>
+
           <IconButton
             onClick={handleAlert}
             color="secondary"
@@ -96,6 +152,7 @@ const HeaderAlert = () => {
           >
             <IconX size={18} color="white" />
           </IconButton>
+
           <>
             {lgUp ? (
               <>
