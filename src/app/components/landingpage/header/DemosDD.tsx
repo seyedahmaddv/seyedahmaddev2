@@ -17,32 +17,32 @@ interface DemoTypes {
 
 const demos: DemoTypes[] = [
   {
-    link: "https://modernize-nextjs.adminmart.com/landingpage",
+    link: "https://seyedahmaddev.ir/landingpage",
     img: "/images/landingpage/demos/demo-main.jpg",
     title: "Main",
   },
   {
-    link: "https://modernize-nextjs-dark.vercel.app/",
+    link: "https://seyedahmaddev.ir/dark",
     img: "/images/landingpage/demos/demo-dark.jpg",
     title: "Dark",
   },
   {
-    link: "https://modernize-nextjs-horizontal.vercel.app/",
+    link: "https://seyedahmaddev.ir/horizontal",
     img: "/images/landingpage/demos/demo-horizontal.jpg",
     title: "Horizontal",
   },
   {
-    link: "https://modernize-nextjs-rtl.vercel.app/",
+    link: "https://seyedahmaddev.ir/rtl",
     img: "/images/landingpage/demos/demo-rtl.jpg",
     title: "RTL",
   },
   {
-    link: "https://modernize-nextjs-minisidebar.vercel.app/",
+    link: "https://seyedahmaddev.ir/minisidebar",
     img: "/images/landingpage/demos/demo-minisidebar.jpg",
     title: "Minisidebar",
   },
   {
-    link: "https://modernize-nextjs-nextauth.vercel.app/",
+    link: "https://seyedahmaddev.ir/nextauth",
     img: "/images/landingpage/demos/demo-nextauth.jpg",
     title: "Nextauth",
   },
@@ -51,27 +51,27 @@ const demos: DemoTypes[] = [
 
 const apps: DemoTypes[] = [
   {
-    link: "https://modernize-nextjs.adminmart.com/apps/calendar",
+    link: "https://seyedahmaddev.ir/apps/calendar",
     img: "/images/landingpage/apps/app-calendar.jpg",
     title: "Calendar",
   },
   {
-    link: "https://modernize-nextjs.adminmart.com/apps/chats",
+    link: "https://seyedahmaddev.ir/apps/chats",
     img: "/images/landingpage/apps/app-chat.jpg",
     title: "Chat",
   },
   {
-    link: "https://modernize-nextjs.adminmart.com/apps/contacts",
+    link: "https://seyedahmaddev.ir/apps/contacts",
     img: "/images/landingpage/apps/app-contact.jpg",
     title: "Contact",
   },
   {
-    link: "https://modernize-nextjs.adminmart.com/apps/email",
+    link: "https://seyedahmaddev.ir/apps/email",
     img: "/images/landingpage/apps/app-email.jpg",
     title: "Email",
   },
   {
-    link: "https://modernize-nextjs.adminmart.com/apps/notes",
+    link: "https://seyedahmaddev.ir/apps/notes",
     img: "/images/landingpage/apps/app-note.jpg",
     title: "Note",
   },

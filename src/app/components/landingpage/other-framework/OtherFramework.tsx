@@ -13,35 +13,35 @@ const frameworks = [
         color: '#F50D51',
         name: 'Angular',
         img: "/images/landingpage/f-angular.png",
-        link: "https://adminmart.com/product/modernize-angular-material-dashboard/?ref=21"
+        link: "https://Seyedahmaddev.ir/product/modernize-angular-material-dashboard/?ref=21"
     },
     {
         bgcolor: '#E8F6F0',
         color: '#2D9566',
         name: 'VueJs',
         img: "/images/landingpage/f-vue.png",
-        link: "https://adminmart.com/product/modernize-vuetify-vue-admin-dashboard/?ref=21"
+        link: "https://Seyedahmaddev.ir/modernize-vuetify-vue-admin-dashboard/?ref=21"
     },
     {
         bgcolor: '#F1E7FB',
         color: '#7811F5',
         name: 'Bootstrap',
         img: "/images/landingpage/f-bootstrap.png",
-        link: "https://adminmart.com/product/modernize-bootstrap-5-admin-template/?ref=21"
+        link: "https://Seyedahmaddev.ir/modernize-bootstrap-5-admin-template/?ref=21"
     },
     {
         bgcolor: '#E3F4FF',
         color: '#2F495E',
         name: '.Net',
         img: "/images/landingpage/f-net.png",
-        link: "https://themeforest.net/item/modernize-aspnet-core-mvc-bootstrap-admin-dashboard-template/49638974"
+        link: "https://Seyedahmaddev.ir/item/modernize-aspnet-core-mvc-bootstrap-admin-dashboard-template/49638974"
     },
     {
         bgcolor: '#EAFBF8',
         color: '#2F495E',
         name: 'Nuxt.js',
         img: "/images/landingpage/f-nuxt.png",
-        link: "https://adminmart.com/product/modernize-nuxt-js-admin-dashboard/?ref=21"
+        link: "https://Seyedahmaddev.ir/product/modernize-nuxt-js-admin-dashboard/?ref=21"
     },
 ];
 const OtherFramework = () => {

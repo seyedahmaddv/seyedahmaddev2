@@ -44,7 +44,7 @@ const DozensCarousel = () => {
             borderRadius="16px"
             sx={{ boxShadow: (theme) => theme.shadows[10] }}
           >
-            <Link href="https://modernize-nextjs.adminmart.com/">
+            <Link href="https://Seyedahmaddev.ir/">
               <Image
                 src="/images/landingpage/demos/demo-main.jpg"
                 alt="user-img"
@@ -62,7 +62,7 @@ const DozensCarousel = () => {
             borderRadius="16px"
             sx={{ boxShadow: (theme) => theme.shadows[10] }}
           >
-            <Link href="https://modernize-nextjs-dark.vercel.app/dashboards/ecommerce">
+            <Link href="https://seyedahmaddev.ir/dashboards/ecommerce">
               <Image
                 src="/images/landingpage/demos/demo-dark.jpg"
                 alt="user-img"
@@ -98,7 +98,7 @@ const DozensCarousel = () => {
             borderRadius="16px"
             sx={{ boxShadow: (theme) => theme.shadows[10] }}
           >
-            <Link href="https://modernize-nextjs-horizontal.vercel.app/dashboards/modern">
+            <Link href="https://seyedahmaddev.ir/dashboards/modern">
               <Image
                 src="/images/landingpage/demos/demo-horizontal.jpg"
                 alt="user-img"
@@ -116,7 +116,7 @@ const DozensCarousel = () => {
             borderRadius="16px"
             sx={{ boxShadow: (theme) => theme.shadows[10] }}
           >
-            <Link href="https://modernize-nextjs.adminmart.com/apps/chats">
+            <Link href="https://seyedahmaddev.ir/apps/chats">
               <Image
                 src="/images/landingpage/apps/app-chat.jpg"
                 alt="user-img"
@@ -134,7 +134,7 @@ const DozensCarousel = () => {
             borderRadius="16px"
             sx={{ boxShadow: (theme) => theme.shadows[10] }}
           >
-            <Link href="https://modernize-nextjs.adminmart.com/apps/email">
+            <Link href="https://seyedahmaddev.ir/apps/email">
               <Image
                 src="/images/landingpage/apps/app-email.jpg"
                 alt="user-img"

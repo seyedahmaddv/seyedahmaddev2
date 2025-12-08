@@ -1,4 +1,4 @@
-# 📊 Modernize Next.js Admin Dashboard
+# 📊 Seyedahmaddev Next.js Admin Dashboard
 
 یک داشبورد ادمینیستریشن حرفه‌ای و مدرن با **Next.js 16** و **Material-UI**
 
@@ -6,7 +6,7 @@
 
 ## 🎯 درباره پروژه
 
-**Modernize** یک قالب admin dashboard پیشرفته است که برای ساخت سریع و آسان پانل‌های مدیریت تصمیم‌گیری‌شده است. این پروژه با بهترین تکنولوژی‌های روز و best practices ساخته شده‌است.
+**Seyedahmaddev** یک قالب admin dashboard پیشرفته است که برای ساخت سریع و آسان پانل‌های مدیریت تصمیم‌گیری‌شده است. این پروژه با بهترین تکنولوژی‌های روز و best practices ساخته شده‌است.
 
 ### ✨ ویژگی‌های اصلی:
 
@@ -389,8 +389,8 @@ MIT License - برای استفاده‌ی تجاری و شخصی آزاد اس�
 ## 📞 تماس و پشتیبانی
 
 - 🐙 **GitHub:** [@seyedahmaddv](https://github.com/seyedahmaddv)
-- 📧 **Email:** contact@adminmart.com
-- 🌐 **Website:** https://adminmart.com
+- 📧 **Email:** info@seyedahmaddev.ir
+- 🌐 **Website:** https://seyedahmaddev.ir
 
 ---
 

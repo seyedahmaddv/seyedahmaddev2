@@ -25,32 +25,32 @@ interface DemoTypes {
 
 const demos: DemoTypes[] = [
   {
-    link: "https://modernize-nextjs.adminmart.com/dashboards/modern",
+    link: "https://seyedahmaddev.ir/dashboards/modern",
     img: "/images/landingpage/demos/demo-main.jpg",
     title: "Main",
   },
   {
-    link: "https://modernize-nextjs-dark.vercel.app/dashboards/ecommerce",
+    link: "https://seyedahmaddev.ir/dashboards/ecommerce",
     img: "/images/landingpage/demos/demo-dark.jpg",
     title: "Dark",
   },
   {
-    link: "https://modernize-nextjs-horizontal.vercel.app/dashboards/modern",
+    link: "https://seyedahmaddev.ir/dashboards/modern",
     img: "/images/landingpage/demos/demo-horizontal.jpg",
     title: "Horizontal",
   },
   {
-    link: "https://modernize-nextjs-rtl.vercel.app/",
+    link: "https://seyedahmaddev.ir/rtl",
     img: "/images/landingpage/demos/demo-rtl.jpg",
     title: "RTL",
   },
   {
-    link: "https://modernize-nextjs-minisidebar.vercel.app/",
+    link: "https://seyedahmaddev.ir/minisidebar",
     img: "/images/landingpage/demos/demo-minisidebar.jpg",
     title: "Minisidebar",
   },
   {
-    link: "https://modernize-nextjs-nextauth.vercel.app/",
+    link: "https://seyedahmaddev.ir/",
     img: "/images/landingpage/demos/demo-nextauth.jpg",
     title: "Nextauth",
   },
@@ -58,22 +58,22 @@ const demos: DemoTypes[] = [
 
 const pages: DemoTypes[] = [
   {
-    link: "https://modernize-nextjs.adminmart.com/frontend-pages/homepage",
+    link: "https://seyedahmaddev.ir/frontend-pages/homepage",
     img: "/images/landingpage/f-pages/page-homepage.jpg",
     title: "Homepage",
   },
   {
-    link: "https://modernize-nextjs.adminmart.com/frontend-pages/about",
+    link: "https://seyedahmaddev.ir/frontend-pages/about",
     img: "/images/landingpage/f-pages/page-about.jpg",
     title: "About us",
   },
   {
-    link: "https://modernize-nextjs.adminmart.com/frontend-pages/portfolio",
+    link: "https://seyedahmaddev.ir/frontend-pages/portfolio",
     img: "/images/landingpage/f-pages/page-portfolio.jpg",
     title: "Portfolio",
   },
   {
-    link: "https://modernize-nextjs.adminmart.com/frontend-pages/pricing",
+    link: "https://seyedahmaddev.ir/frontend-pages/pricing",
     img: "/images/landingpage/f-pages/page-pricing.jpg",
     title: "Pricing",
   },
@@ -81,69 +81,69 @@ const pages: DemoTypes[] = [
 
 const apps: DemoTypes[] = [
   {
-    link: "https://modernize-nextjs.adminmart.com/apps/kanban",
+    link: "https://seyedahmaddev.ir/apps/kanban",
     img: "/images/landingpage/apps/app-kanban.jpg",
     hot: true,
     title: "Kanban App",
   },
   {
-    link: "https://modernize-nextjs.adminmart.com/apps/invoice/list",
+    link: "https://seyedahmaddev.ir/apps/invoice/list",
     img: "/images/landingpage/apps/app-invoice.jpg",
     hot: true,
     title: "Invoice App",
   },
   {
-    link: "https://modernize-nextjs.adminmart.com/apps/calendar",
+    link: "https://seyedahmaddev.ir/apps/calendar",
     img: "/images/landingpage/apps/app-calendar.jpg",
     title: "Calendar App",
   },
   {
-    link: "https://modernize-nextjs.adminmart.com/apps/chats",
+    link: "https://seyedahmaddev.ir/apps/chats",
     img: "/images/landingpage/apps/app-chat.jpg",
     title: "Chat App",
   },
   {
-    link: "https://modernize-nextjs.adminmart.com/apps/contacts",
+    link: "https://seyedahmaddev.ir/apps/contacts",
     img: "/images/landingpage/apps/app-contact.jpg",
     title: "Contact App",
   },
   {
-    link: "https://modernize-nextjs.adminmart.com/apps/email",
+    link: "https://seyedahmaddev.ir/apps/email",
     img: "/images/landingpage/apps/app-email.jpg",
     title: "Email App",
   },
   {
-    link: "https://modernize-nextjs.adminmart.com/apps/notes",
+    link: "https://seyedahmaddev.ir/apps/notes",
     img: "/images/landingpage/apps/app-note.jpg",
     title: "Note App",
   },
   {
-    link: "https://modernize-nextjs.adminmart.com/apps/user-profile/profile",
+    link: "https://seyedahmaddev.ir/apps/user-profile/profile",
     img: "/images/landingpage/apps/app-user-profile.jpg",
     title: "User Profile App",
   },
   {
-    link: "https://modernize-nextjs.adminmart.com/apps/blog/post",
+    link: "https://seyedahmaddev.ir/apps/blog/post",
     img: "/images/landingpage/apps/app-blog.jpg",
     title: "Blog App",
   },
   {
-    link: "https://modernize-nextjs.adminmart.com/apps/tickets",
+    link: "https://seyedahmaddev.ir/apps/tickets",
     img: "/images/landingpage/apps/app-ticket.jpg",
     title: "Ticket App",
   },
   {
-    link: "https://modernize-nextjs.adminmart.com/apps/ecommerce/shop",
+    link: "https://seyedahmaddev.ir/apps/ecommerce/shop",
     img: "/images/landingpage/apps/app-ecommerce-shop.jpg",
     title: "eCommerce Shop App",
   },
   {
-    link: "https://modernize-nextjs.adminmart.com/apps/ecommerce/checkout",
+    link: "https://seyedahmaddev.ir/apps/ecommerce/checkout",
     img: "/images/landingpage/apps/app-ecommerce-checkout.jpg",
     title: "eCommerce Checkout App",
   },
   {
-    link: "https://modernize-nextjs.adminmart.com/apps/ecommerce/list",
+    link: "https://seyedahmaddev.ir/apps/ecommerce/list",
     img: "/images/landingpage/apps/app-ecommerce-list.jpg",
     title: "eCommerce List App",
   },
