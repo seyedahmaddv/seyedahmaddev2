@@ -18,18 +18,21 @@ const NotificationBg = styled(Box)(() => ({
   position: "absolute",
   right: "20%",
   top: 0,
+  pointerEvents: "none",
 }));
 
 const NotificationBg2 = styled(Box)(() => ({
   position: "absolute",
   right: 0,
   top: 0,
+  pointerEvents: "none",
 }));
 
 const NotificationBg3 = styled(Box)(() => ({
   position: "absolute",
   left: 0,
   bottom: "-5px",
+  pointerEvents: "none",
 }));
 
 const HeaderAlert = () => {
