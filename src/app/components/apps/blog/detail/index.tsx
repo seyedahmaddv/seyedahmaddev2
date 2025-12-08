@@ -101,7 +101,7 @@ const BlogDetail = () => {
                 variant="rectangular"
                 width="100%"
                 height={440}
-                sx={{ borderRadius: (theme) => theme.shape.borderRadius / 5 }}
+                sx={{ borderRadius: (theme) => `${parseInt(theme.shape.borderRadius as string) / 5}px` }}
               ></Skeleton>
             </>
           ) : (
