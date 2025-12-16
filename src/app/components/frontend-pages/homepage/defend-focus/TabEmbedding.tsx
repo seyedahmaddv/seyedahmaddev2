@@ -68,7 +68,7 @@ const TabEmbedding = () => {
                         xs: '35px'
                     },
                     lineHeight: "1.6",
-                }} fontWeight="700" mt={5}>Design systems & accessibility</Typography>
+                }} fontWeight="700" mt={5}>Design systems & accessibility </Typography>
                 <Box mt={4}>
                     <StyledAccordian expanded={expanded3} onChange={handleChange4}>
                         <AccordionSummary
