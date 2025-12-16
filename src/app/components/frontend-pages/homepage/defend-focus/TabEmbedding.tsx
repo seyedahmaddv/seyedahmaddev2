@@ -53,7 +53,7 @@ const TabEmbedding = () => {
                     xs: 12,
                     lg: 6
                 }}>
-                <Image src="/images/frontend-pages/homepage/accordian1.jpg" width={500} height={500} style={{
+                <Image src="/images/frontend-pages/homepage/accordian1.webp" width={500} height={500} style={{
                     width: '100%', height: 'auto'
                 }} alt="img" />
             </Grid>

@@ -51,7 +51,7 @@ const TabTeamScheduling = () => {
           lg: 6
         }}>
         <Image
-          src="/images/frontend-pages/homepage/accordian1.jpg"
+          src="/images/frontend-pages/homepage/accordian1.webp"
           width={500}
           height={500}
           style={{
