@@ -73,6 +73,7 @@ const TabTeamScheduling = () => {
               lg: "40px",
               xs: "35px",
             },
+            lineHeight: "1.6",
           }}
           fontWeight="700"
           mt={5}
