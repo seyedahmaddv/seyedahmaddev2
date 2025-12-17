@@ -59,7 +59,7 @@ const BlogComment: BlogType[] = [
 
 const BlogPost: BlogPostType[] = [
   {
-    id: chance.integer({ min: 1, max: 2000 }),
+    id: chance.guid(),
     title: "Garmins Instinct Crossover is a rugged hybrid smartwatch",
     content: chance.paragraph({ sentences: 2 }),
     coverImg: "/images/blog/blog-img2.jpg",
@@ -76,7 +76,7 @@ const BlogPost: BlogPostType[] = [
     comments: BlogComment,
   },
   {
-    id: chance.integer({ min: 1, max: 2000 }),
+    id: chance.guid(),
     title: "After Twitter Staff Cuts, Survivors Face Radio Silence",
     content: chance.paragraph({ sentences: 2 }),
     coverImg: "/images/blog/blog-img1.jpg",
@@ -93,7 +93,7 @@ const BlogPost: BlogPostType[] = [
     comments: BlogComment,
   },
   {
-    id: chance.integer({ min: 1, max: 2000 }),
+    id: chance.guid(),
     title:
       "Apple is apparently working on a new streamlined accessibility for iOS",
     content: chance.paragraph({ sentences: 2 }),
@@ -111,7 +111,7 @@ const BlogPost: BlogPostType[] = [
     comments: BlogComment,
   },
   {
-    id: chance.integer({ min: 1, max: 2000 }),
+    id: chance.guid(),
     title: "Why Figma is selling to Adobe for $20 billion",
     content: chance.paragraph({ sentences: 2 }),
     coverImg: "/images/blog/blog-img4.jpg",
@@ -128,7 +128,7 @@ const BlogPost: BlogPostType[] = [
     comments: BlogComment,
   },
   {
-    id: chance.integer({ min: 1, max: 2000 }),
+    id: chance.guid(),
     title: "Streaming video way before it was cool, go dark tomorrow",
     content: chance.paragraph({ sentences: 2 }),
     coverImg: "/images/blog/blog-img5.jpg",
@@ -145,7 +145,7 @@ const BlogPost: BlogPostType[] = [
     comments: BlogComment,
   },
   {
-    id: chance.integer({ min: 1, max: 2000 }),
+    id: chance.guid(),
     title: "As yen tumbles, gadget-loving Japan goes for secondhand iPhones ",
     content: chance.paragraph({ sentences: 2 }),
     coverImg: "/images/blog/blog-img6.jpg",
@@ -162,7 +162,7 @@ const BlogPost: BlogPostType[] = [
     comments: BlogComment,
   },
   {
-    id: chance.integer({ min: 1, max: 2000 }),
+    id: chance.guid(),
     title:
       "Intel loses bid to revive antitrust case against patent foe Fortress",
     content: chance.paragraph({ sentences: 2 }),
@@ -180,7 +180,7 @@ const BlogPost: BlogPostType[] = [
     comments: BlogComment,
   },
   {
-    id: chance.integer({ min: 1, max: 2000 }),
+    id: chance.guid(),
     title: "COVID outbreak deepens as more lockdowns loom in China",
     content: chance.paragraph({ sentences: 2 }),
     coverImg: "/images/blog/blog-img8.jpg",
@@ -197,7 +197,7 @@ const BlogPost: BlogPostType[] = [
     comments: BlogComment,
   },
   {
-    id: chance.integer({ min: 1, max: 2000 }),
+    id: chance.guid(),
     title: "Early Black Friday Amazon deals: cheap TVs, headphones, laptops",
     content: chance.paragraph({ sentences: 2 }),
     coverImg: "/images/blog/blog-img9.jpg",
@@ -214,7 +214,7 @@ const BlogPost: BlogPostType[] = [
     comments: BlogComment,
   },
   {
-    id: chance.integer({ min: 1, max: 2000 }),
+    id: chance.guid(),
     title: "Presented by Max Rushden with Barry Glendenning, Philippe Auclair",
     content: chance.paragraph({ sentences: 2 }),
     coverImg: "/images/blog/blog-img10.jpg",
