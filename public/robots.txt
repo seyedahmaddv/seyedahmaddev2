@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /api
+Disallow: /.next
+Disallow: /node_modules
+
+Sitemap: https://seyedahmaddev.ir/api/sitemap.xml
+
+# Crawl delay
+Crawl-delay: 1
+
+# Rate limiting
+Request-rate: 10/1m
