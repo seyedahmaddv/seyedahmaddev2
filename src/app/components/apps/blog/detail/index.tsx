@@ -27,6 +27,7 @@ import {
 } from "@tabler/icons-react";
 import { format } from "date-fns";
 import BlogComment from "./BlogComment";
+import BlogComments from "@/app/components/shared/BlogComments";
 import { uniqueId } from "lodash";
 import BlankCard from "../../../shared/BlankCard";
 
@@ -244,6 +245,10 @@ const BlogDetail = () => {
               return <BlogComment comment={comment} key={comment.profile.id} />;
             })}
           </Box>
+
+          {/* Supabase Comments Section */}
+          <Divider sx={{ my: 4 }} />
+          <BlogComments postId={post?.id || ""} />
         </CardContent>
       </BlankCard>
     </Box>

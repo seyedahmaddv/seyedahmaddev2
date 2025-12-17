@@ -64,7 +64,9 @@ export function generateBaseMetadata(
       'max-snippet': -1,
       'max-video-preview': -1,
     },
-    canonical: canonical,
+    alternates: {
+      canonical: canonical,
+    },
   };
 }
 
