@@ -248,7 +248,9 @@ const BlogDetail = () => {
 
           {/* Supabase Comments Section */}
           <Divider sx={{ my: 4 }} />
-          <BlogComments postId={post?.id || ""} />
+          {post && (
+            <BlogComments postId={post.id} />
+          )}
         </CardContent>
       </BlankCard>
     </Box>

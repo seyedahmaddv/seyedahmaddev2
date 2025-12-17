@@ -14,7 +14,7 @@ export interface BlogType {
 }
 
 export interface BlogPostType {
-  id: number | string;
+  id: string;
   title: string;
   content?: string;
   coverImg?: string;
