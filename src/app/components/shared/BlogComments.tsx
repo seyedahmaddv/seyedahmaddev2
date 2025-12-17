@@ -111,7 +111,7 @@ const BlogComments: React.FC<CommentsProps> = ({ postId }) => {
             <Card key={comment.id}>
               <CardContent>
                 <Grid container spacing={2}>
-                  <Grid item={true} xs={12} sm="auto">
+                  <Grid item xs={12} sm={6}>
                     <Avatar>{comment.author_name.charAt(0)}</Avatar>
                   </Grid>
                   <Grid item xs={12} sm>
