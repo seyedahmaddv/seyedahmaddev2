@@ -60,7 +60,7 @@ export default function Login2() {
                       variant="h6"
                       fontWeight="500"
                     >
-                      New to SeyedAhmad?
+                      New to Modernize?
                     </Typography>
                     <Link
                       href="/auth/auth2/register"

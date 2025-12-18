@@ -88,7 +88,7 @@ export default function Login() {
                     variant="h6"
                     fontWeight="500"
                   >
-                    New to SeyedAhmad?
+                    New to Modernize?
                   </Typography>
                   <Link
                     href="/auth/auth1/register"
