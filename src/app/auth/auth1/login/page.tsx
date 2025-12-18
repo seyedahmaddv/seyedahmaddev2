@@ -75,7 +75,7 @@ export default function Login() {
           }}>
           <Box p={4}>
             <AuthLogin
-              title="Welcome to SeyedAhmad"
+              title="Welcome to Modernize"
               subtext={
                 <Typography variant="subtitle1" color="textSecondary" mb={1}>
                   Your Admin Dashboard
