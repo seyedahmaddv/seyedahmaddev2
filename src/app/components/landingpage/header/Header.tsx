@@ -13,7 +13,6 @@ import { styled } from '@mui/material/styles';
 import Logo from "@/app/(DashboardLayout)/layout/shared/logo/Logo";
 import Navigations from "./Navigations";
 import MobileSidebar from "./MobileSidebar";
-import LanguageSwitcher from "@/app/components/shared/LanguageSwitcher";
 import { IconMenu2 } from "@tabler/icons-react";
 
 const LpHeader = () => {
@@ -64,8 +63,7 @@ const LpHeader = () => {
           {lgUp ? (
             <Stack spacing={1} direction="row" alignItems="center">
               <Navigations />
-              <LanguageSwitcher />
-            </Stack>
+              </Stack>
           ) : null}
         </ToolbarStyled>
       </Container>
