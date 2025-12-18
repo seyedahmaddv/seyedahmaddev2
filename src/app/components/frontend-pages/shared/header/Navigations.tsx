@@ -11,6 +11,10 @@ import { useEffect, useState } from "react";
 
 export const NavLinks = [
   {
+    title: "Home",
+    href: "/",
+  },
+  {
     title: "About Us",
     href: "/frontend-pages/about",
   },
@@ -18,16 +22,13 @@ export const NavLinks = [
     title: "Blog",
     href: "/frontend-pages/blog",
   },
-  {
-    title: "Portfolio",
-    new: true,
-    href: "/frontend-pages/portfolio",
-  },
+  // {
+  //   title: "Portfolio",
+  //   new: true,
+  //   href: "/frontend-pages/portfolio",
+  // },
 
-  {
-    title: "Home",
-    href: "/",
-  },
+  
   {
     title: "Pricing",
     href: "/frontend-pages/pricing",
