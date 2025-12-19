@@ -1,53 +1,55 @@
 ---
-title: Business from the brink of ruin by optimizing our website....
-excerpt: Business from the brink of ruin by optimizing our website....
-date: 2024-11-08
+title: Fixing the "params is a Promise" Error in Next.js 16 – A Real-World Troubleshooting Story
+excerpt: How a subtle change in Next.js 16 broke my blog's dynamic routes – and how awaiting a Promise saved the day.
+date: 2025-12-19
 coverImage: /images/blog/blog-img1.jpg
 author: silicaman
 authorImage: /images/profile/user-1.jpg
-views: 45
-comments: 4
-category: Lifestyle
+views: 15
+comments: 2
+category: Web Development
 ---
+# Fixing the "params is a Promise" Error in Next.js 16: Why Dynamic Routes Break and How to Fix Them
 
-# Main Heading & Points
+Recently, while working on my blog built with Next.js 16 and the Modernize template, I ran into a frustrating issue that completely blocked access to individual blog post pages (routes like /blog/[slug]).
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
+The console was throwing errors such as:
 
-- Vivamus eu lacus scelerisque, placerat commodo lectus.
-- Etiam et ante at ex porta fringilla.
-- Nullam dignissim sem eu magna aliquet, sit amet volutpat tellus
+- "Route used `params.slug`. `params` is a Promise and must be unwrapped with `await`"
+- "Cannot read properties of undefined" inside my markdown processing function
 
-![Blog Details](/images/blogdetail-1.jpg)
+After some investigation, I realized this is an intentional change introduced in Next.js 15.2 and more strictly enforced in version 16. In Server Components for dynamic routes, the `params` prop is now a Promise. This supports advanced features like partial prerendering and streaming.
 
-Unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
+Trying to access `params.slug` directly returns undefined, which causes everything that depends on the slug (like loading markdown files) to fail.
 
----
+The fix is surprisingly simple: treat `params` as a Promise by awaiting it in both the page component and the generateMetadata function.
 
-We are a dedicated team of passionate product managers, developers, UX/UI designers, QA engineers experts helping businesses from new startups
+This small adjustment immediately resolved all the errors. Blog posts started loading correctly, markdown content rendered as expected, and the site was fully functional again.
 
----
-
-There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable making this the first true generator on the Internet. It uses a dictionary
+(Note: The "Invalid source map" warnings you might see with Turbopack on Windows are harmless. You can temporarily run `next dev --no-turbo` to hide them during development.)
 
 ---
+As a full-stack developer with a strong focus on Next.js, React, TypeScript, and modern web performance, I love diving into these kinds of real-world problems and sharing straightforward solutions.
 
+If you're dealing with Next.js 16 upgrades, App Router challenges, performance issues, or any frontend-related hurdles, feel free to reach out — I'm always open to discussions, collaborations, or new opportunities!
+---
+Next.js keeps evolving quickly, bringing powerful async patterns to the forefront. Staying on top of these changes helps us build faster, more reliable applications.
+
+Quick tip: When upgrading to a new major version, always review the official release notes for breaking changes.
+---
 ## Tags
-
-- Trends
-- Design
-- Research
-
+- Next.js
+- React
+- TypeScript
+- Web Development
+- Troubleshooting
+- Frontend
+- App Router
 ---
-
 ## Share
-
 - [Facebook](#)
 - [Twitter](#)
 - [Linkedin](#)
-
 ---
-
 ## Join our newsletter
-
 Email address: [Subscribe](#)
