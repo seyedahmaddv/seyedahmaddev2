@@ -9,6 +9,11 @@ import NextLink from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
+interface NavLink {
+  title: string;
+  href: string;
+  new?: boolean; 
+}
 export const NavLinks = [
   {
     title: "Home",
