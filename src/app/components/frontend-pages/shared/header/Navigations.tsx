@@ -21,26 +21,26 @@ export const NavLinks = [
   },
   {
     title: "About Us",
-    href: "/frontend-pages/about",
+    href: "/about",
   },
   {
     title: "Blog",
-    href: "/frontend-pages/blog",
+    href: "/blog",
   },
   {
     title: "Portfolio",
     new: true,
-    href: "/frontend-pages/portfolio",
+    href: "/portfolio",
   },
 
   
   {
     title: "Pricing",
-    href: "/frontend-pages/pricing",
+    href: "/pricing",
   },
   {
     title: "Contact",
-    href: "/frontend-pages/contact",
+    href: "/contact",
   },
 ];
 
