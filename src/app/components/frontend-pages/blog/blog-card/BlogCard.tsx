@@ -51,7 +51,7 @@ const BlogCard = ({ blog }: { blog: Blog }) => {
         <>
           <Typography
             component={NextLink}
-            href={`/frontend-pages/blog/${slug}`}
+            href={`/blog/${slug}`}
           >
             <CardMedia
               component="img"
@@ -86,7 +86,7 @@ const BlogCard = ({ blog }: { blog: Blog }) => {
                 color="inherit"
                 sx={{ textDecoration: "none" }}
                 component={NextLink}
-                href={`/frontend-pages/blog/${slug}`}
+                href={`/blog/${slug}`}
               >
                 {title}
               </Typography>

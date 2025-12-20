@@ -12,7 +12,7 @@ const BlogPage = () => {
 
     return (
         <>
-            <PageContainer title="Pricing" description="this is Pricing">
+            <PageContainer title="Blog" description="posts about Next.js and React web development">
 
                 <HeaderAlert />
                 <HpHeader />

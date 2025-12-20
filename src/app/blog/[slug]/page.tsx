@@ -156,7 +156,42 @@ export default async function Post({
             <Divider />
 
             <CardContent>
-              <div dangerouslySetInnerHTML={{ __html: content }} />
+              <Box
+                sx={{
+                  // استایل‌های اصلی برای خوانایی بهتر
+                  fontSize: '1.15rem',  // ← اندازه پایه فونت پاراگراف‌ها (بزرگ‌تر از پیش‌فرض)
+                  lineHeight: 1.8,      // فاصله خطوط عالی برای خواندن طولانی
+
+                  '& p': {
+                    fontSize: '1.15rem',   // پاراگراف‌ها
+                    marginBottom: '1.8rem',
+                    lineHeight: 1.8,
+                    color: 'text.primary',
+                  },
+
+                  '& h1': { fontSize: '2.5rem', margin: '2.5rem 0 1.5rem', lineHeight: 1.3 },
+                  '& h2': { fontSize: '2.1rem', margin: '2.2rem 0 1.2rem', lineHeight: 1.4 },
+                  '& h3': { fontSize: '1.8rem', margin: '2rem 0 1rem', lineHeight: 1.4 },
+                  '& h4': { fontSize: '1.5rem', margin: '1.8rem 0 1rem', lineHeight: 1.5 },
+                  '& h5, & h6': { fontSize: '1.3rem', margin: '1.5rem 0 1rem' },
+
+                  '& ul, & ol': { paddingLeft: '2rem', marginBottom: '1.5rem' },
+                  '& li': { marginBottom: '0.75rem', lineHeight: 1.7 },
+
+                  '& blockquote': {
+                    borderLeft: '5px solid',
+                    borderColor: 'primary.main',
+                    paddingLeft: '1.5rem',
+                    margin: '2rem 0',
+                    fontStyle: 'italic',
+                    fontSize: '1.2rem',
+                    color: 'text.secondary',
+                  },
+
+                  '& img': { maxWidth: '100%', height: 'auto', borderRadius: '12px', my: 4 },
+                }}
+                dangerouslySetInnerHTML={{ __html: content }}
+              />
             </CardContent>
           </>
         </BlankCard>
