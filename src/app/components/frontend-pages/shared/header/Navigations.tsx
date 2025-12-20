@@ -27,11 +27,11 @@ export const NavLinks = [
     title: "Blog",
     href: "/frontend-pages/blog",
   },
-  // {
-  //   title: "Portfolio",
-  //   new: true,
-  //   href: "/frontend-pages/portfolio",
-  // },
+  {
+    title: "Portfolio",
+    new: true,
+    href: "/frontend-pages/portfolio",
+  },
 
   
   {
