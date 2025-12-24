@@ -7,26 +7,25 @@ import Banner from '../components/frontend-pages/portfolio/Banner';
 import ScrollToTop from '../components/frontend-pages/shared/scroll-to-top';
 import GalleryCard from '@/app/components/apps/userprofile/gallery/GalleryCard';
 import { Box, Container } from '@mui/material';
-import { UserDataProvider } from '@/app/context/UserDataContext/index'
-const PricingPage = () => {
-    return (
-        <UserDataProvider>
-            <PageContainer title="Portfolio" description="this is Portfolio">
 
-                <HeaderAlert />
-                <HpHeader />
-                <Banner />
-                <Box my={3}>
-                    <Container maxWidth="lg">
-                        <GalleryCard />
-                    </Container>
-                </Box>
-                <C2a />
-                <Footer />
-                <ScrollToTop />
-            </PageContainer>
-        </UserDataProvider>
-    );
+const PortfolioPage = () => {
+  return (
+    <PageContainer title="Portfolio" description="My creative works and projects">
+      <HeaderAlert />
+      <HpHeader />
+      <Banner />
+
+      <Box my={6}>
+        <Container maxWidth="lg">
+          <GalleryCard />  {/* بدون UserDataProvider */}
+        </Container>
+      </Box>
+
+      <C2a />
+      <Footer />
+      <ScrollToTop />
+    </PageContainer>
+  );
 };
 
-export default PricingPage;
+export default PortfolioPage;

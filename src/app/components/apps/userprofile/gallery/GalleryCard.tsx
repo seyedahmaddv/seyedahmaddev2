@@ -1,142 +1,94 @@
 "use client";
-import React, { useContext, useEffect, useState } from "react";
+
+import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import CardMedia from "@mui/material/CardMedia";
-import Chip from "@mui/material/Chip";
 import Grid from "@mui/material/Grid";
-import IconButton from "@mui/material/IconButton";
-import InputAdornment from "@mui/material/InputAdornment";
-import Skeleton from "@mui/material/Skeleton";
-import Stack from "@mui/material/Stack";
 import TextField from "@mui/material/TextField";
+import InputAdornment from "@mui/material/InputAdornment";
 import Typography from "@mui/material/Typography";
 import BlankCard from "../../../../components/shared/BlankCard";
-import { UserDataContext } from "@/app/context/UserDataContext/index";
-import { IconDotsVertical, IconSearch } from "@tabler/icons-react";
+import { IconSearch } from "@tabler/icons-react";
 import { format } from "date-fns";
-import { GallaryType } from "../../../../(DashboardLayout)/types/apps/users";
-
+import { portfolioItems } from "@/data/portfolioData"; // داده‌های ثابت
 import FsLightbox from "fslightbox-react";
 
 const GalleryCard = () => {
-  const { gallery } = useContext(UserDataContext);
-  const [search, setSearch] = React.useState('');
-
-  const filterPhotos = (photos: GallaryType[], cSearch: string) => {
-    if (photos)
-      return photos.filter((t) => t.name.toLocaleLowerCase().includes(cSearch.toLocaleLowerCase()));
-
-    return photos;
-  };
-
-  const getPhotos = filterPhotos(gallery, search);
-
-  // skeleton
-  const [isLoading, setLoading] = React.useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 500);
-
-    return () => clearTimeout(timer);
-  }, []);
-
+  const [search, setSearch] = useState("");
   const [toggler, setToggler] = useState(false);
-  const [currentImage, setCurrentImage] = useState('');
+  const [currentImage, setCurrentImage] = useState("");
+
+  const filteredItems = portfolioItems.filter((item) =>
+    item.name.toLowerCase().includes(search.toLowerCase())
+  );
 
   const openLightbox = (image: string) => {
     setCurrentImage(image);
-    setToggler((prev) => !prev);
+    setToggler(!toggler);
   };
 
-  return (<>
-    <Grid container spacing={3}>
-      <Grid
-        size={{
-          sm: 12,
-          lg: 12
-        }}>
-        <Stack direction="row" alignItems={"center"} mt={2}>
-          <Box>
-            <Typography variant="h3">
-              Gallery &nbsp;
-              <Chip label={getPhotos.length} color="secondary" size="small" />
-            </Typography>
-          </Box>
-          <Box ml="auto">
-            <TextField
-              id="outlined-search"
-              placeholder="Search Gallery"
-              size="small"
-              type="search"
-              variant="outlined"
-              fullWidth
-              onChange={(e) => setSearch(e.target.value)}
-              slotProps={{
-                input: {
-                  startAdornment: (
-                    <InputAdornment position="start">
-                      <IconSearch size="14" />
-                    </InputAdornment>
-                  ),
-                },
+  return (
+    <>
+      {/* جستجو */}
+      <Box mb={4}>
+        <TextField
+          placeholder="Search Projects..."
+          size="medium"
+          variant="outlined"
+          fullWidth
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+          slotProps={{
+            input: {
+              startAdornment: (
+                <InputAdornment position="start">
+                  <IconSearch size="20" />
+                </InputAdornment>
+              ),
+            },
+          }}
+          sx={{ maxWidth: 500 }}
+        />
+      </Box>
 
-                htmlInput: { "aria-label": "Search Gallery" }
-              }} />
-          </Box>
-        </Stack>
-      </Grid>
-      {getPhotos.map((photo) => {
-        return (
-          (<Grid
-            key={photo.id}
-            size={{
-              xs: 12,
-              lg: 4
-            }}>
-            <BlankCard className="hoverCard">
-              {isLoading ? (
-                <>
-                  <Skeleton
-                    variant="rectangular"
-                    animation="wave"
-                    width="100%"
-                    height={220}
-                  ></Skeleton>
-                </>
-              ) : (
-                <CardMedia
-                  component={"img"}
-                  height="220"
-                  alt="Remy Sharp"
-                  src={photo.cover}
-                  onClick={() => openLightbox(photo.cover)} sx={{ cursor: 'pointer' }}
-                />
-              )}
+      {/* گالری */}
+      <Grid container spacing={4}>
+        {filteredItems.map((item) => (
+          <Grid size={{ xs: 12, sm: 6, lg: 4 }} key={item.id}>
+            <BlankCard className="hoverCard" sx={{ overflow: 'hidden' }}>
+              <CardMedia
+                component="img"
+                height="300"
+                image={item.cover}
+                alt={item.name}
+                onClick={() => openLightbox(item.cover)}
+                sx={{
+                  cursor: "pointer",
+                  objectFit: "cover",
+                  transition: "transform 0.4s ease",
+                  '&:hover': { transform: 'scale(1.08)' },
+                }}
+              />
               <Box p={3}>
-                <Stack direction="row" gap={1}>
-                  <Box>
-                    <Typography variant="h6">{photo.name}jpg</Typography>
-                    <Typography variant="caption">
-                      {format(new Date(photo.time), "E, MMM d, yyyy")}
-                    </Typography>
-                  </Box>
-                  <Box ml={"auto"}>
-                    <IconButton>
-                      <IconDotsVertical size="16" />
-                    </IconButton>
-                  </Box>
-                </Stack>
+                <Typography variant="h6" fontWeight={600} gutterBottom>
+                  {item.name}
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  {format(new Date(item.time), "MMMM yyyy")}
+                </Typography>
               </Box>
             </BlankCard>
-          </Grid>)
-        );
-      })}
-    </Grid>
-    {/* FSLightbox component */}
-    <FsLightbox toggler={!toggler} sources={currentImage ? [currentImage] : []} />
-  </>);
+          </Grid>
+        ))}
+      </Grid>
+
+      {/* لایت‌باکس */}
+      <FsLightbox
+        toggler={toggler}
+        sources={currentImage ? [currentImage] : []}
+      />
+    </>
+  );
 };
 
 export default GalleryCard;

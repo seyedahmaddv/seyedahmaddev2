@@ -26,7 +26,7 @@ export const Menuitems = [
     children: [
       {
         id: uniqueId(),
-        title: "Modern",
+        title: "Home",
         icon: IconPoint,
         href: "/",
         chip: "New",
@@ -40,56 +40,56 @@ export const Menuitems = [
       },
     ],
   },
-  {
-    id: uniqueId(),
-    title: "Frontend pages",
-    icon: IconAppWindow,
-    href: "/frontend-pages/",
-    children: [
-      {
-        id: uniqueId(),
-        title: "Homepage",
-        icon: IconPoint,
-        href: "/frontend-pages/homepage",
-      },
-      {
-        id: uniqueId(),
-        title: "About Us",
-        icon: IconPoint,
-        href: "/frontend-pages/about",
-      },
-      {
-        id: uniqueId(),
-        title: "Blog",
-        icon: IconPoint,
-        href: "/frontend-pages/blog",
-      },
-      {
-        id: uniqueId(),
-        title: "Blog Details",
-        icon: IconPoint,
-        href: "/frontend-pages/blog/Blog_1",
-      },
-      {
-        id: uniqueId(),
-        title: "Contact",
-        icon: IconPoint,
-        href: "/frontend-pages/contact",
-      },
-      {
-        id: uniqueId(),
-        title: "Portfolio",
-        icon: IconPoint,
-        href: "/frontend-pages/portfolio",
-      },
-      {
-        id: uniqueId(),
-        title: "Pricing",
-        icon: IconPoint,
-        href: "/frontend-pages/pricing",
-      },
-    ],
-  },
+  // {
+  //   id: uniqueId(),
+  //   title: "Website page",
+  //   icon: IconAppWindow,
+  //   href: "/",
+  //   children: [
+  //     {
+  //       id: uniqueId(),
+  //       title: "Homepage",
+  //       icon: IconPoint,
+  //       href: "/",
+  //     },
+  //     {
+  //       id: uniqueId(),
+  //       title: "About Us",
+  //       icon: IconPoint,
+  //       href: "/about",
+  //     },
+  //     {
+  //       id: uniqueId(),
+  //       title: "Blog",
+  //       icon: IconPoint,
+  //       href: "/blog",
+  //     },
+  //     {
+  //       id: uniqueId(),
+  //       title: "Blog Details",
+  //       icon: IconPoint,
+  //       href: "/blog/Blog_1",
+  //     },
+  //     {
+  //       id: uniqueId(),
+  //       title: "Contact",
+  //       icon: IconPoint,
+  //       href: "/contact",
+  //     },
+  //     {
+  //       id: uniqueId(),
+  //       title: "Portfolio",
+  //       icon: IconPoint,
+  //       href: "/portfolio",
+  //     },
+  //     {
+  //       id: uniqueId(),
+  //       title: "Pricing",
+  //       icon: IconPoint,
+  //       href: "/pricing",
+  //     },
+  //   ],
+  // },
   {
     id: uniqueId(),
     title: "Apps",

@@ -1,7 +1,6 @@
 import { notFound } from "next/navigation";
 import BlankCard from "@/app/components/shared/BlankCard";
-import { getPostBySlug } from "@/utils/markdown";
-import markdownToHtml from "@/utils/markdownToHtml";
+import { supabase } from "@/utils/supabase/client";
 
 import {
   CardContent,
@@ -25,27 +24,20 @@ import Footer from "@/app/components/frontend-pages/shared/footer";
 import ScrollToTop from "@/app/components/frontend-pages/shared/scroll-to-top";
 import HeaderAlert from "@/app/components/frontend-pages/shared/header/HeaderAlert";
 import HpHeader from "@/app/components/frontend-pages/shared/header/HpHeader";
+import BlogComments from "@/app/components/frontend-pages/blog/BlogComments";
+import MarkdownRenderer from "@/app/components/shared/MarkdownRenderer";
 
-/* ----------------------------------------
-   Metadata (SEO safe) - اصلاح شده برای Next.js 16
------------------------------------------ */
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{ slug: string }>;
-}) {
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
 
-  const post = getPostBySlug(slug, ["title"]);
+  const { data: post } = await supabase
+    .from('blog_posts')
+    .select('title')
+    .eq('slug', slug)
+    .single();
 
   if (!post) {
-    return {
-      title: "Not Found",
-      robots: {
-        index: false,
-        follow: false,
-      },
-    };
+    return { title: "Post Not Found" };
   }
 
   return {
@@ -53,66 +45,52 @@ export async function generateMetadata({
   };
 }
 
-/* ----------------------------------------
-   Page Component - اصلاح شده برای Next.js 16
------------------------------------------ */
-export default async function Post({
-  params,
-}: {
-  params: Promise<{ slug: string }>;
-}) {
-  const { slug } = await params; // ← خیلی مهم! await کردن params
+export default async function Post({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
 
-  const post = getPostBySlug(slug, [
-    "title",
-    "author",
-    "authorImage",
-    "content",
-    "coverImage",
-    "date",
-    "views",
-    "comments",
-    "category",
-  ]);
+  const { data: post, error } = await supabase
+    .from('blog_posts')
+    .select('*')
+    .eq('slug', slug)
+    .eq('published', true)
+    .single();
 
-  if (!post) {
+  if (error || !post) {
     notFound();
   }
 
-  const content = await markdownToHtml(post.content ?? "");
+  const { count } = await supabase
+    .from('blog_comments')
+    .select('*', { count: 'exact', head: true })
+    .eq('post_slug', slug)
+    .eq('approved', true);
 
   return (
-    <PageContainer title={post.title} description={post.category ?? ""}>
+    <PageContainer title={post.title} description={post.excerpt || post.category}>
       <HeaderAlert />
       <HpHeader />
 
       <Container maxWidth="lg" sx={{ my: 4 }}>
         <BlankCard>
           <>
-            {post.coverImage && (
+            {post.cover_image && (
               <CardMedia
                 component="img"
                 height="440"
-                image={post.coverImage}
+                image={post.cover_image}
                 alt={post.title}
               />
             )}
 
             <CardContent>
               <Stack direction="row" sx={{ mt: "-45px" }}>
-                {post.authorImage && (
-                  <Tooltip title={post.author ?? ""} placement="top">
-                    <Avatar src={post.authorImage} />
-                  </Tooltip>
-                )}
+                <Tooltip title={post.author || "Anonymous"} placement="top">
+                  <Avatar src="/images/profile/user-1.jpg" />
+                </Tooltip>
 
                 <Chip
-                  sx={{
-                    ml: "auto",
-                    mt: "-21px",
-                    backgroundColor: "white",
-                  }}
-                  label="2 min read"
+                  sx={{ ml: "auto", mt: "-21px", backgroundColor: "white" }}
+                  label="5 min read"
                   size="small"
                 />
               </Stack>
@@ -128,70 +106,31 @@ export default async function Post({
               </Box>
 
               <Stack direction="row" gap={3} alignItems="center">
-                {post.views !== undefined && (
-                  <Stack direction="row" gap={1} alignItems="center">
-                    <IconEye size={18} />
-                    {post.views}
-                  </Stack>
-                )}
+                <Stack direction="row" gap={1} alignItems="center">
+                  <IconEye size={18} />
+                  Views: Coming soon
+                </Stack>
 
-                {post.comments !== undefined && (
-                  <Stack direction="row" gap={1} alignItems="center">
-                    <IconMessage2 size={18} />
-                    {post.comments}
-                  </Stack>
-                )}
+                <Stack direction="row" gap={1} alignItems="center">
+                  <IconMessage2 size={18} />
+                  {count || 0} Comments
+                </Stack>
 
-                {post.date && (
-                  <Stack direction="row" ml="auto" alignItems="center">
-                    <IconPoint size={16} />
-                    <small>
-                      {format(new Date(post.date), "dd MMM yyyy")}
-                    </small>
-                  </Stack>
-                )}
+                <Stack direction="row" ml="auto" alignItems="center">
+                  <IconPoint size={16} />
+                  <small>{format(new Date(post.created_at), "dd MMM yyyy")}</small>
+                </Stack>
               </Stack>
             </CardContent>
 
             <Divider />
 
             <CardContent>
-              <Box
-                sx={{
-                  // استایل‌های اصلی برای خوانایی بهتر
-                  fontSize: '1.15rem',  // ← اندازه پایه فونت پاراگراف‌ها (بزرگ‌تر از پیش‌فرض)
-                  lineHeight: 1.8,      // فاصله خطوط عالی برای خواندن طولانی
+              <MarkdownRenderer content={post.content} />
+            </CardContent>
 
-                  '& p': {
-                    fontSize: '1.15rem',   // پاراگراف‌ها
-                    marginBottom: '1.8rem',
-                    lineHeight: 1.8,
-                    color: 'text.primary',
-                  },
-
-                  '& h1': { fontSize: '2.5rem', margin: '2.5rem 0 1.5rem', lineHeight: 1.3 },
-                  '& h2': { fontSize: '2.1rem', margin: '2.2rem 0 1.2rem', lineHeight: 1.4 },
-                  '& h3': { fontSize: '1.8rem', margin: '2rem 0 1rem', lineHeight: 1.4 },
-                  '& h4': { fontSize: '1.5rem', margin: '1.8rem 0 1rem', lineHeight: 1.5 },
-                  '& h5, & h6': { fontSize: '1.3rem', margin: '1.5rem 0 1rem' },
-
-                  '& ul, & ol': { paddingLeft: '2rem', marginBottom: '1.5rem' },
-                  '& li': { marginBottom: '0.75rem', lineHeight: 1.7 },
-
-                  '& blockquote': {
-                    borderLeft: '5px solid',
-                    borderColor: 'primary.main',
-                    paddingLeft: '1.5rem',
-                    margin: '2rem 0',
-                    fontStyle: 'italic',
-                    fontSize: '1.2rem',
-                    color: 'text.secondary',
-                  },
-
-                  '& img': { maxWidth: '100%', height: 'auto', borderRadius: '12px', my: 4 },
-                }}
-                dangerouslySetInnerHTML={{ __html: content }}
-              />
+            <CardContent>
+              <BlogComments postSlug={slug} />
             </CardContent>
           </>
         </BlankCard>
