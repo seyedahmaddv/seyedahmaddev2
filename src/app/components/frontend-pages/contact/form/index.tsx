@@ -16,11 +16,11 @@ import Address from "./Address";
 const numbers = [
   {
     value: "one",
-    label: "General Enquiry",
+    label: "General",
   },
   {
     value: "two",
-    label: "General Enquiry 2",
+    label: "Consulting",
   },
 ];
 
