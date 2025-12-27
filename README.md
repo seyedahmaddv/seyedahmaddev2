@@ -1,6 +1,6 @@
-# 🎨 Next.js website with Dashboard
+# 🎨 Modern weblog with Nextjs
 
-> A modern, feature-rich admin dashboard built with **Next.js 16**, **Turbopack**, and **Material-UI**.
+> A modern, feature-rich Weblog built with **Next.js 16**, **Turbopack**, and **Material-UI**.
 
 ![Next.js](https://img.shields.io/badge/Next.js-16.0.7-black?style=flat-square&logo=next.js)
 ![React](https://img.shields.io/badge/React-19-61dafb?style=flat-square&logo=react)
