@@ -8,7 +8,7 @@ export interface userType {
 }
 
 export interface GallaryType {
-  link: ReactNode;
+  link: string;
   id: string | number;
   cover: string;
   name: string;
