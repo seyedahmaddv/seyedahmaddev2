@@ -12,6 +12,8 @@ import { IconSearch } from "@tabler/icons-react";
 import { format } from "date-fns";
 import { portfolioItems } from "@/data/portfolioData"; // داده‌های ثابت
 import FsLightbox from "fslightbox-react";
+import MuiLink from "@mui/material/Link";
+import NextLink from "next/link";
 
 const GalleryCard = () => {
   const [search, setSearch] = useState("");
@@ -75,6 +77,18 @@ const GalleryCard = () => {
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
                   {format(new Date(item.time), "MMMM yyyy")}
+                </Typography>
+                <Typography color="text.secondary">
+                  <MuiLink
+                    component={NextLink}
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    underline="hover"  // یا "always" یا "none"
+                    color="inherit"    // این باعث می‌شه رنگ parent (یعنی text.secondary) رو بگیره
+                  >
+                    {item.link}
+                  </MuiLink>
                 </Typography>
               </Box>
             </BlankCard>
