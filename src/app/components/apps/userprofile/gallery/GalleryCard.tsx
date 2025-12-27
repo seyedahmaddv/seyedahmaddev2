@@ -79,16 +79,20 @@ const GalleryCard = () => {
                   {format(new Date(item.time), "MMMM yyyy")}
                 </Typography>
                 <Typography color="text.secondary">
-                  <MuiLink
-                    component={NextLink}
-                    href={item.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    underline="hover"  // یا "always" یا "none"
-                    color="inherit"    // این باعث می‌شه رنگ parent (یعنی text.secondary) رو بگیره
-                  >
-                    {item.link}
-                  </MuiLink>
+                  {item.link ? (
+                    <MuiLink
+                      component={NextLink}
+                      href={item.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      underline="hover"
+                      color="inherit"
+                    >
+                      {item.link}
+                    </MuiLink>
+                  ) : (
+                    <span>{item.link}</span>
+                  )}
                 </Typography>
               </Box>
             </BlankCard>
