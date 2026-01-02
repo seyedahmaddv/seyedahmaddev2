@@ -1,14 +1,9 @@
-import { Plus_Jakarta_Sans } from "next/font/google";
-
-export const plus = Plus_Jakarta_Sans({
-  weight: ["300", "400", "500", "600", "700"],
-  subsets: ["latin"],
-  display: "swap",
-  fallback: ["Helvetica", "Arial", "sans-serif"],
-});
+// Use a CSS fallback for the Google font to avoid turbopack internal font issues.
+// If you want the Google-hosted font, add a <link> to your app layout or import it in global CSS.
+const defaultFontFamily = "'Plus Jakarta Sans', Helvetica, Arial, sans-serif";
 
 const typography = {
-  fontFamily: plus.style.fontFamily,
+  fontFamily: defaultFontFamily,
   h1: {
     fontWeight: 600,
     fontSize: '2.25rem',

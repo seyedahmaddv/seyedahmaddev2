@@ -285,7 +285,7 @@ const Banner = () => {
 
         {lgUp ? (
           <Image
-            src="/images/frontend-pages/homepage/bottom-part.svg"
+            src="/images/frontend-pages/homepage/bottom-part.webp"
             alt="banner"
             width={500}
             height={300}

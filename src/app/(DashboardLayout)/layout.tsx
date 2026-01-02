@@ -4,6 +4,7 @@ import Container from "@mui/material/Container";
 import { styled, useTheme } from "@mui/material/styles";
 import React, { useContext } from "react";
 import Header from "./layout/vertical/header/Header";
+import { AuthProvider } from '@/app/context/AuthContext';
 import Sidebar from "./layout/vertical/sidebar/Sidebar";
 import Customizer from "./layout/shared/customizer/Customizer";
 import Navigation from "./layout/horizontal/navbar/Navigation";
@@ -41,6 +42,7 @@ export default function RootLayout({
   const theme = useTheme();
   const MiniSidebarWidth = config.miniSidebarWidth;
   return (
+    <AuthProvider>
     <MainWrapper className={activeMode === 'dark' ? 'darkbg mainwrapper' : 'mainwrapper'}>
       <title>Seyedahmad NextJs</title>
       {/* ------------------------------------------- */}
@@ -89,5 +91,6 @@ export default function RootLayout({
         <Customizer />
       </PageWrapper>
     </MainWrapper>
+    </AuthProvider>
   );
 }

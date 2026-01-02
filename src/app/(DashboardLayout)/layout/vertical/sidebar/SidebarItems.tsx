@@ -1,4 +1,5 @@
 import Menuitems from './MenuItems';
+import { useAuth } from '@/app/context/AuthContext';
 import { usePathname } from "next/navigation";
 import Box from '@mui/material/Box';
 import List from '@mui/material/List';
@@ -21,10 +22,29 @@ const SidebarItems = () => {
   const lgUp = useMediaQuery((theme) => theme.breakpoints.up('lg'));
   const hideMenu = lgUp ? isCollapse == "mini-sidebar" && !isSidebarHover : '';
 
+  const { role, loading } = useAuth();
+
+  const filterByRole = (items: any[]) => {
+    if (!items) return items;
+    return items
+      .map((it) => {
+        if (it.roles && it.roles.length > 0) {
+          if (!role) return null;
+          if (!it.roles.includes(role)) return null;
+        }
+        const newIt = { ...it };
+        if (newIt.children) newIt.children = filterByRole(newIt.children);
+        return newIt;
+      })
+      .filter(Boolean);
+  };
+
+  const visibleMenu = loading ? Menuitems : filterByRole(Menuitems as any[]);
+
   return (
     <Box sx={{ px: 3 }}>
       <List sx={{ pt: 0 }} className="sidebarNav">
-        {Menuitems.map((item) => {
+        {visibleMenu.map((item: any) => {
           // {/********SubHeader**********/}
           if (item.subheader) {
             return <NavGroup item={item} hideMenu={hideMenu} key={item.subheader} />;

@@ -146,26 +146,35 @@ const Menuitems: NavGroup[] = [
   //   href: "/apps/contacts",
   // },
 
-  // {
-  //   id: uniqueId(),
-  //   title: "Blog",
-  //   icon: IconChartDonut3,
-  //   href: "/apps/blog/",
-  //   children: [
-  //     {
-  //       id: uniqueId(),
-  //       title: "Posts",
-  //       icon: IconPoint,
-  //       href: "/apps/blog/post",
-  //     },
-  //     {
-  //       id: uniqueId(),
-  //       title: "Detail",
-  //       icon: IconPoint,
-  //       href: "/apps/blog/detail/streaming-video-way-before-it-was-cool-go-dark-tomorrow",
-  //     },
-  //   ],
-  // },
+  {
+    id: uniqueId(),
+    title: "Blog",
+    icon: IconChartDonut3,
+    href: "/apps/blog/",
+    roles: ['admin', 'author'],
+    children: [
+      {
+        id: uniqueId(),
+        title: "Posts",
+        icon: IconPoint,
+        href: "/apps/blog/post",
+        roles: ['admin', 'author'],
+      },
+      {
+        id: uniqueId(),
+        title: "Create Post",
+        icon: IconEdit,
+        href: "/apps/blog/create",
+        roles: ['admin', 'author'],
+      },
+      {
+        id: uniqueId(),
+        title: "Detail",
+        icon: IconPoint,
+        href: "/apps/blog/detail/streaming-video-way-before-it-was-cool-go-dark-tomorrow",
+      },
+    ],
+  },
   // {
   //   id: uniqueId(),
   //   title: "Ecommerce",
