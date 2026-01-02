@@ -15,6 +15,7 @@ export type NavGroup = {
   variant?: string;
   external?: boolean;
   level?: number;
+  roles?: string[];
 
   onClick?: (event: MouseEvent<HTMLElement>) => void;
 };

@@ -15,7 +15,9 @@ const RolesPage: React.FC = () => {
     try {
       const { data: sessionData } = await supabase.auth.getSession();
       const token = (sessionData as any)?.session?.access_token;
-      const res = await fetch('/api/admin/users', { headers: token ? { Authorization: `Bearer ${token}` } : {} });
+      const headers: Record<string, string> = {};
+      if (token) headers.Authorization = `Bearer ${token}`;
+      const res = await fetch('/api/admin/users', { headers });
       const json = await res.json();
       if (!res.ok) {
         setMessage({ type: 'error', text: json.error || 'Failed to fetch users' });
@@ -38,9 +40,11 @@ const RolesPage: React.FC = () => {
     try {
       const { data: sessionData } = await supabase.auth.getSession();
       const token = (sessionData as any)?.session?.access_token;
+      const headers: Record<string, string> = { 'Content-Type': 'application/json' };
+      if (token) headers.Authorization = `Bearer ${token}`;
       const res = await fetch('/api/admin/users', {
         method: 'POST',
-        headers: Object.assign({ 'Content-Type': 'application/json' }, token ? { Authorization: `Bearer ${token}` } : {}),
+        headers,
         body: JSON.stringify({ userId, role }),
       });
       const json = await res.json();

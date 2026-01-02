@@ -67,7 +67,7 @@ export async function POST(req: Request) {
     const { userId, role } = body || {};
     if (!userId || !role) return NextResponse.json({ error: 'userId and role required' }, { status: 400 });
 
-    const { error } = await supabaseAdmin.from('profiles').upsert({ id: userId, role }, { returning: 'minimal' });
+    const { error } = await supabaseAdmin.from('profiles').upsert({ id: userId, role });
     if (error) {
       console.error('upsert error', error);
       return NextResponse.json({ error: 'Failed to set role' }, { status: 500 });

@@ -14,7 +14,7 @@ import CustomCheckbox from "@/app/components/forms/theme-elements/CustomCheckbox
 import CustomTextField from "@/app/components/forms/theme-elements/CustomTextField";
 import CustomFormLabel from "@/app/components/forms/theme-elements/CustomFormLabel";
 import AuthSocialButtons from "./AuthSocialButtons";
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { supabase } from '@/utils/supabase/client';
 import Alert from '@mui/material/Alert';
@@ -76,7 +76,7 @@ const AuthLogin = ({ title, subtitle, subtext }: loginType) => {
       <Stack>
         <Box>
           <CustomFormLabel htmlFor="username">Email</CustomFormLabel>
-          <CustomTextField id="username" variant="outlined" fullWidth value={email} onChange={(e) => setEmail(e.target.value)} />
+          <CustomTextField id="username" variant="outlined" fullWidth value={email} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)} />
         </Box>
         <Box>
           <CustomFormLabel htmlFor="password">Password</CustomFormLabel>
@@ -86,7 +86,7 @@ const AuthLogin = ({ title, subtitle, subtext }: loginType) => {
             variant="outlined"
             fullWidth
             value={password}
-            onChange={(e) => setPassword(e.target.value)}
+            onChange={(e: React.ChangeEvent<HTMLInputElement>) => setPassword(e.target.value)}
           />
         </Box>
         <Stack
