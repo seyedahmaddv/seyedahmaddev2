@@ -22,6 +22,7 @@ export default function RootLayout({
         <CustomizerContextProvider>
           <MyApp>{children}</MyApp>
         </CustomizerContextProvider>
+        <Analytics />
       </body>
     </html>
   );
