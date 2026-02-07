@@ -49,7 +49,7 @@
     "lodash": "^4.17.21",
     "moment": "^2.29.4",
     "mui-tiptap": "^1.13.0",
-    "next": "^16.0.7",
+    "next": "16.0.10",
     "nextjs-toploader": "^3.7.15",
     "prop-types": "^15.7.2",
     "react": "^19.0.0-rc-02c0e824-20241028",
